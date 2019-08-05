@@ -6,6 +6,11 @@
 
 📦
  - https://github.com/
+
+📚 is guide and tutorial
+ - https://developer.mozilla.org/
+ 
+
 ---
 
 ## Sub topic
