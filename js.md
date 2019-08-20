@@ -11,7 +11,7 @@ const arrayUniq = arrayNotUniq.filter((value, index, self) => {
 const arrayUniq = [...new Set(arrayNotUniq)]
 ```
 
-
+⭐️ [JavaScript & Node.js Testing Best Practices](https://github.com/goldbergyoni/javascript-testing-best-practices)
 
 ## Node.js
 
