@@ -3,7 +3,7 @@
 ⭐️ [Practical Ways to Write Better JavaScript](https://dev.to/taillogs/practical-ways-to-write-better-javascript-26d4)
 
 [Array Distinct](https://codeburst.io/javascript-array-distinct-5edc93501dc4)
-```
+```javascript
 const arrayUniq = arrayNotUniq.filter((value, index, self) => {
         return self.indexOf(value) === index
     })
