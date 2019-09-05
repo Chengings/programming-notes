@@ -4,7 +4,8 @@
 
 [PHP: The Right Way](https://phptherightway.com)
 
-[Compact function](https://www.php.net/manual/en/function.compact.php)
+[Compact function](https://www.php.net/manual/en/function.compact.php).
+Similar to [JavaScript's shorthand property names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#New_notations_in_ECMAScript_2015)
 ```php
 <?php
     $city  = "San Francisco";
