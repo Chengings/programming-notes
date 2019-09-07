@@ -4,6 +4,8 @@
 
 [CSS](./css.md)
 
+[HTML](./html.md)
+
 [JavaScript](./js.md)
 
 [PHP](./php.md)
