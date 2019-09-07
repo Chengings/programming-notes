@@ -13,6 +13,8 @@ const arrayUniq = [...new Set(arrayNotUniq)]
 
 ⭐️ [JavaScript & Node.js Testing Best Practices](https://github.com/goldbergyoni/javascript-testing-best-practices)
 
+[Writing a Simple MVC App in Plain JavaScript](https://www.taniarascia.com/javascript-mvc-todo-app/)
+
 ## Node.js
 
 📦
