@@ -10,6 +10,8 @@
 
 [PHP](./php.md)
 
+[Regular expression](./regex.md)
+
 [Rust](./rust.md)
 
 # Github
