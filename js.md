@@ -15,6 +15,9 @@ const arrayUniq = [...new Set(arrayNotUniq)]
 
 [Writing a Simple MVC App in Plain JavaScript](https://www.taniarascia.com/javascript-mvc-todo-app/)
 
+[void in JavaScript and TypeScript](https://fettblog.eu/void-in-javascript-and-typescript/) | [void operator
+](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void) 
+
 ## Node.js
 
 📦
