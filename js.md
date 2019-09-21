@@ -21,6 +21,8 @@ const arrayUniq = [...new Set(arrayNotUniq)]
 [The JavaScript Survival Guide](https://www.youtube.com/watch?v=9emXNzqCKyg)
 // Highlight: closures and this
 
+⭐️ [A Re-Introduction To Destructuring Assignment](https://www.smashingmagazine.com/2019/09/reintroduction-destructuring-assignment/)
+
 ## Node.js
 
 📦
