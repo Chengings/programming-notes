@@ -30,6 +30,8 @@ const arrayUniq = [...new Set(arrayNotUniq)]
 ---
 Node.js has a built-in debug log method [stefanjudis](https://www.stefanjudis.com/today-i-learned/node-js-has-a-built-in-debug-method/) | [Node.js](https://nodejs.org/api/util.html#util_util_debuglog_section)
 
+[It’s about time to embrace Node.js Streams](https://slides.com/lucianomammino/its-about-time-to-embrace-streams-node-manchjs)
+
 ## React
 
 [Life cycle](https://busypeoples.github.io/post/react-component-lifecycle/)
