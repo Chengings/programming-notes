@@ -23,6 +23,8 @@ const arrayUniq = [...new Set(arrayNotUniq)]
 
 ⭐️ [A Re-Introduction To Destructuring Assignment](https://www.smashingmagazine.com/2019/09/reintroduction-destructuring-assignment/)
 
+⭐️ [Fireship's Javascript Iteration and Loops](https://fireship.io/snippets/javascript-loops-pro-tips/)
+
 ## Node.js
 
 📦
