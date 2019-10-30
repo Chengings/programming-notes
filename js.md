@@ -25,6 +25,17 @@ const arrayUniq = [...new Set(arrayNotUniq)]
 
 ⭐️ [Fireship's Javascript Iteration and Loops](https://fireship.io/snippets/javascript-loops-pro-tips/)
 
+[Clone array](https://www.samanthaming.com/tidbits/35-es6-way-to-clone-an-array)
+```javascript
+const sheeps = ['🐑', '🐑', '🐑'];
+
+// Old way
+const cloneSheeps = sheeps.slice();
+
+// ES6 way
+const cloneSheepsES6 = [...sheeps];
+```
+
 ## Node.js
 
 📦
