@@ -36,6 +36,8 @@ const cloneSheeps = sheeps.slice();
 const cloneSheepsES6 = [...sheeps];
 ```
 
+[Compound values are always assigned/passed by reference-copy](https://stackoverflow.com/a/34522073)
+
 ## Node.js
 
 📦
