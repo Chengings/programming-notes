@@ -38,6 +38,13 @@ const cloneSheepsES6 = [...sheeps];
 
 [Compound values are always assigned/passed by reference-copy](https://stackoverflow.com/a/34522073)
 
+Use `repeat` and `padStart` to solve Hackerrank's stairCase problem.
+```javascript
+for (let i = 1; i <= n; i++) {
+    console.log("#".repeat(i).padStart(n));
+}
+````
+
 ## Node.js
 
 📦
