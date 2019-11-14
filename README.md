@@ -10,6 +10,8 @@
 
 [PHP](./php.md)
 
+[PHPJS](./phpjs.md)
+
 [Regular expression](./regex.md)
 
 [Rust](./rust.md)
