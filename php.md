@@ -30,3 +30,5 @@ Similar to [JavaScript's shorthand property names](https://developer.mozilla.org
 [PHP 7.2 has new object type](https://www.php.net/manual/en/migration72.new-features.php)
 
 [What does strict types do in PHP?](https://stackoverflow.com/a/48723830)
+
+[Ignore vendor folder in PhpStrom](https://stackoverflow.com/a/38364125)
