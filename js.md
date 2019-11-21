@@ -49,6 +49,8 @@ for (let i = 1; i <= n; i++) {
 
 📦
  - https://github.com/sindresorhus/awesome-nodejs#packages
+ - pm2: process manager https://github.com/Unitech/pm2
+ 
 ---
 Node.js has a built-in debug log method [stefanjudis](https://www.stefanjudis.com/today-i-learned/node-js-has-a-built-in-debug-method/) | [Node.js](https://nodejs.org/api/util.html#util_util_debuglog_section)
 
