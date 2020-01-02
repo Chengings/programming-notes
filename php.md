@@ -32,3 +32,16 @@ Similar to [JavaScript's shorthand property names](https://developer.mozilla.org
 [What does strict types do in PHP?](https://stackoverflow.com/a/48723830)
 
 [Ignore vendor folder in PhpStrom](https://stackoverflow.com/a/38364125)
+
+[Null coalescing operator - isset ternary](https://en.wikipedia.org/wiki/Null_coalescing_operator#PHP)
+```php
+$user = $this->getUser() ?? $this->createGuestUser();
+
+/* Equivalent to */
+
+$user = $this->getUser();
+
+if (null === $user) {
+    $user = $this->createGuestUser();
+}
+```
