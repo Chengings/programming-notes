@@ -16,9 +16,13 @@
 
 [Rust](./rust.md)
 
+[Shell](./shell.md)
+
 [SSH](./ssh.md)
 
 [Tools](./tools.md)
+
+[You might not need](./youmightnotneed.md)
 
 # Github
 
