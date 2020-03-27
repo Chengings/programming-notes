@@ -12,7 +12,9 @@
 
 [PHPJS](./phpjs.md)
 
-[Regular expression](./regex.md)
+[Question & Answer (Q&A)](./qa.md)
+
+[Regular expression (RegEx)](./regex.md)
 
 [Rust](./rust.md)
 
