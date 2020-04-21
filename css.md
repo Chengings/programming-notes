@@ -1,5 +1,8 @@
 # CSS
 
+[How to add support for older browsers](https://www.youtube.com/watch?v=ZzuYbhKVPE0)
+// write CSS fall back property and write separate CSS  by using CSS.supports() API for modern property.
+
 ## Grid
 
 [How to stack elements with CSS Grid](https://www.stefanjudis.com/today-i-learned/css-grid-can-be-used-to-stack-elements/)
