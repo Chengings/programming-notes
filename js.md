@@ -45,12 +45,21 @@ for (let i = 1; i <= n; i++) {
 }
 ````
 
+Optional chaining `?.`, instead of causing an error if a reference is nullish (null or undefined), the expression short-circuits with a return value of `undefined`.
+```
+let nestedProp = obj.first && obj.first.second;
+let nestedProp = obj.first?.second; // optional chaining
+// equivalent
+let temp = obj.first;
+let nestedProp = ((temp === null || temp === undefined) ? undefined : temp.second);
+```
+
 ## Node.js
 
 📦
  - https://github.com/sindresorhus/awesome-nodejs#packages
  - pm2: process manager https://github.com/Unitech/pm2
- 
+
 ---
 Node.js has a built-in debug log method [stefanjudis](https://www.stefanjudis.com/today-i-learned/node-js-has-a-built-in-debug-method/) | [Node.js](https://nodejs.org/api/util.html#util_util_debuglog_section)
 
