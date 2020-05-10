@@ -18,3 +18,64 @@ type brew-update
 type rs-shell
 # rs-shell is an alias for exec /bin/zsh -l
 ```
+
+
+---
+## Brace Expansion
+
+Brace expansion generates a set of alternative combinations. Generated results need not exist as files.
+
+
+```
+echo {I,want,my,money,back}
+I want my money back
+
+echo _{I,want,my,money,back}-
+_I- _want- _my- _money- _back-
+
+echo {5..12}
+5 6 7 8 9 10 11 12
+
+echo {01..10}
+01 02 03 04 05 06 07 08 09 10
+
+echo {c..k}
+c d e f g h i j k
+
+echo {A..C}{0..13}
+A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13 B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 B10 B11 B12 B13 C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 C12 C13
+
+
+# Bash 4
+echo {0001..5}
+0001 0002 0003 0004 0005
+
+echo {1..10..2}
+1 3 5 7 9
+
+echo {10..1..2}
+10 8 6 4 2
+```
+
+### Example
+```
+# Bulk download
+wget http://docs.example.com/documentation/slides_part{1..6}.html
+
+mkdir /usr/local/src/bash/{old,new,dist,bugs}
+
+# Rename file
+mv myText.{txt,tex}
+
+# Create new backup file /some/file.txt.bak
+cp /some/file.txt{,.bak}
+
+# Repeating arguments
+somecommand --{force,delete}
+
+for i in {1..100}
+do
+   #do something 100 times
+done
+
+```
