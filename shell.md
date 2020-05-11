@@ -19,6 +19,35 @@ type rs-shell
 # rs-shell is an alias for exec /bin/zsh -l
 ```
 
+Standard input (FD 0), standard output (FD 1) and standard error (FD 2)
+
+```
+ls existing.txt no.file >export_ls.txt
+ls existing.txt no.file 1>export_ls.txt
+# Redirect FD 1 to the file "export_ls.txt". Error messages are _emitted_ on FD 2.
+```
+
+```
+ls existing.txt no.file >export_ls.txt 2>/dev/null`
+# Redirect FD 1 to the file "export_ls.txt" and FD 2 to the file "/dev/null/"
+```
+
+```
+# Redirecting standard output and standard error
+ls existing.txt no.file >export_ls.txt 2>&1
+ls existing.txt no.file &>export_ls.txt
+# Make FD 1 target "export_ls.txt" and FD 2 target FD 1's target
+```
+
+`read line <file.txt`
+Read from 'file.txt'
+
+```
+# Appending file redirection
+echo Hello >~/world
+echo World >>~/world
+# Make FD x append to the end of file.
+```
 
 ---
 ## Brace Expansion
