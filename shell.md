@@ -49,6 +49,27 @@ echo World >>~/world
 # Make FD x append to the end of file.
 ```
 
+Run a job in the background
+```
+<command> &
+
+<command>
+# command is running
+Ctrl-Z
+```
+
+Show status of all jobs
+
+`jobs`
+
+Bring a specific job to foreground
+
+`fg <job_id>`
+
+Resume a specific job  and run it in the background
+
+`bg <job_id>`
+
 ---
 ## Brace Expansion
 
