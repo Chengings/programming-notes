@@ -71,6 +71,30 @@ Resume a specific job  and run it in the background
 `bg <job_id>`
 
 ---
+## Network
+
+`ifconfig` display the link and address status of network interfaces
+```
+ifconfig  # list all information on all network devices
+ifconfig en0 up # bring en0 (Ethernet) up
+ifconfig en1 down # down en1 (Wi-fi)
+```
+
+`dig (domain information groper)` check dns record
+```
+dig wikipedia.org
+dig +short wikipedia.org # look up the ip
+dig @1.0.0.1 # check DNS records of "wikipedia.org" by "1.0.0.1"
+```
+
+`traceroute` print the route packets take to network host
+```
+traceroute wikipedia.org
+traceroute -q 10 wikipedia.org # set the number of probes to 10 probes
+```
+
+![Image of Traceroute Diagram](assets/traceroute_diagram.webp)
+---
 ## Brace Expansion
 
 Brace expansion generates a set of alternative combinations. Generated results need not exist as files.
