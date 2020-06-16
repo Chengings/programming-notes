@@ -7,20 +7,3 @@
 [a list of software (SaaS, PaaS, IaaS, etc.) and other offerings that have free tiers for developers](https://free-for.dev/)
 
 [JSON Beautifier & Validator](https://duckduckgo.com/?q=json+formatter)
-
-##
-Network
-
-[HE's BGP](https://bgp.he.net/)
-
-[Peering DB](https://www.peeringdb.com/)
-
-[Speedtest: Cloudflare](https://speed.cloudflare.com/)
-
-[Speedtest: Netflix](https://fast.com/)
-
-[Ipleak](https://ipleak.net/)
-
-[Dns leak test](dnsleaktest.com/)
-
-[am.i.mullvad.net](https://am.i.mullvad.net/)
