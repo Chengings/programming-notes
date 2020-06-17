@@ -8,6 +8,8 @@
 
 [JavaScript](./js.md)
 
+[Networking](./networking.md)
+
 [PHP](./php.md)
 
 [PHPJS](./phpjs.md)
