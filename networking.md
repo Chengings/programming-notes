@@ -8,7 +8,7 @@
  - [Speedtest: Cloudflare](https://speed.cloudflare.com/)
  - [Speedtest: Netflix](https://fast.com/)
  - [Speedtest + Ping: testmy.net](https://testmy.net)
- - [Dns leak test](dnsleaktest.com/)
+ - [Dns leak test](https://dnsleaktest.com/)
  - [Dns performance](https://www.dnsperf.com/)
  - [am.i.mullvad.net](https://am.i.mullvad.net/)
  - [Ipleak](https://ipleak.net/)
