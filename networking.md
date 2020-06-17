@@ -9,6 +9,7 @@
  - [Speedtest: Netflix](https://fast.com/)
  - [Speedtest + Ping: testmy.net](https://testmy.net)
  - [Dns leak test](dnsleaktest.com/)
+ - [Dns performance](https://www.dnsperf.com/)
  - [am.i.mullvad.net](https://am.i.mullvad.net/)
  - [Ipleak](https://ipleak.net/)
  - [IP Address Fraud Checker: Scamalytics](https://scamalytics.com/)
