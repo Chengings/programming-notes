@@ -49,6 +49,23 @@ echo World >>~/world
 # Make FD x append to the end of file.
 ```
 
+heredoc `<<` uses to feed data to a program without storing it in an external file and must followed by any identifier. For example, mine is 'ichiwa'
+```
+cat <<ichiwa
+I love you so much.
+I know I am naive.
+ichiwa
+```
+
+herestring `<<<` has same function as heredoc but without delimeter. Mostly use for one line command. Might not be in every shell but available in bash, ksh,
+or zsh.
+```
+cat <<<'ha ha ha I know' # Equivalent to "echo 'ha ha ha I know' | cat"
+
+cat <<<'I love you so much.
+I know I am naive.'
+```
+
 Run a job in the background
 ```
 <command> &
