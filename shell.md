@@ -7,12 +7,12 @@
 ## Basic
 
 `apropos` to search the "name" sections of all manual pages. Usually a wrapper for the `man -k`.
-```
+```sh
 apropos copy
 ```
 
 `type` to display the kind of a command
-```
+```sh
 type tldr
 # tldr is /usr/local/bin/tldr
 type brew-update
@@ -23,18 +23,18 @@ type rs-shell
 
 Standard input (FD 0), standard output (FD 1) and standard error (FD 2)
 
-```
+```sh
 ls existing.txt no.file >export_ls.txt
 ls existing.txt no.file 1>export_ls.txt
 # Redirect FD 1 to the file "export_ls.txt". Error messages are _emitted_ on FD 2.
 ```
 
-```
+```sh
 ls existing.txt no.file >export_ls.txt 2>/dev/null`
 # Redirect FD 1 to the file "export_ls.txt" and FD 2 to the file "/dev/null/"
 ```
 
-```
+```sh
 # Redirecting standard output and standard error
 ls existing.txt no.file >export_ls.txt 2>&1
 ls existing.txt no.file &>export_ls.txt
@@ -44,7 +44,7 @@ ls existing.txt no.file &>export_ls.txt
 `read line <file.txt`
 Read from 'file.txt'
 
-```
+```sh
 # Appending file redirection
 echo Hello >~/world
 echo World >>~/world
@@ -52,7 +52,7 @@ echo World >>~/world
 ```
 
 heredoc `<<` uses to feed data to a program without storing it in an external file and must followed by any identifier. For example, mine is 'ichiwa'
-```
+```sh
 cat <<ichiwa
 I love you so much.
 I know I am naive.
@@ -61,7 +61,7 @@ ichiwa
 
 herestring `<<<` has same function as heredoc but without delimeter. Mostly use for one line command. Might not be in every shell but available in bash, ksh,
 or zsh.
-```
+```sh
 cat <<<'ha ha ha I know' # Equivalent to "echo 'ha ha ha I know' | cat"
 
 cat <<<'I love you so much.
@@ -69,7 +69,7 @@ I know I am naive.'
 ```
 
 Run a job in the background
-```
+```sh
 <command> &
 
 <command>
@@ -93,21 +93,21 @@ Resume a specific job  and run it in the background
 ## Network
 
 `ifconfig` display the link and address status of network interfaces
-```
+```sh
 ifconfig  # list all information on all network devices
 ifconfig en0 up # bring en0 (Ethernet) up
 ifconfig en1 down # down en1 (Wi-fi)
 ```
 
 `dig (domain information groper)` check dns record
-```
+```sh
 dig wikipedia.org
 dig +short wikipedia.org # look up the ip
 dig @1.0.0.1 # check DNS records of "wikipedia.org" by "1.0.0.1"
 ```
 
 `traceroute` print the route packets take to network host
-```
+```sh
 traceroute wikipedia.org
 traceroute -q 10 wikipedia.org # set the number of probes to 10 probes
 ```
@@ -119,7 +119,7 @@ traceroute -q 10 wikipedia.org # set the number of probes to 10 probes
 Brace expansion generates a set of alternative combinations. Generated results need not exist as files.
 
 
-```
+```sh
 echo {I,want,my,money,back}
 I want my money back
 
@@ -151,7 +151,7 @@ echo {10..1..2}
 ```
 
 ### Example
-```
+```sh
 # Bulk download
 wget http://docs.example.com/documentation/slides_part{1..6}.html
 
