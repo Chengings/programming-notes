@@ -2,6 +2,8 @@
 
 [Best practices & Guidance](./best-practices-guidance.md)
 
+[Common](./common.md)
+
 [CSS](./css.md)
 
 [HTML](./html.md)
@@ -11,8 +13,6 @@
 [Networking](./networking.md)
 
 [PHP](./php.md)
-
-[PHPJS](./phpjs.md)
 
 [Question & Answer (Q&A)](./qa.md)
 
