@@ -2,6 +2,8 @@
 
 ⭐️ [Explain Shell](https://explainshell.com/)
 
+⭐️ [ShellCheck](https://www.shellcheck.net/)
+
 ## Basic
 
 `apropos` to search the "name" sections of all manual pages. Usually a wrapper for the `man -k`.
@@ -168,5 +170,22 @@ for i in {1..100}
 do
    #do something 100 times
 done
+```
 
+--
+## Filenames and Pathnames in Shell: How to do it Correctly (   https://dwheeler.com/essays/filenames-in-shell.html)
+
+```sh
+# Basic rules
+
+## Double-quote parameter (variable) references and command substitutions
+"$file"
+"$(pwd)"
+"$(dirname "$file")"
+
+## Prefix all globs so they cannot expand to begin with “-”
+cat ./*                   # Use this, NOT "cat *" ... Must have 1+ files.
+for file in ./* ; do      # Use this, NOT "for file in *" (beware empty lists)
+...
+done
 ```
