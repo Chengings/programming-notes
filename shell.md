@@ -4,6 +4,8 @@
 
 ⭐️ [ShellCheck](https://www.shellcheck.net/)
 
+[Why is printf better than echo?](https://unix.stackexchange.com/a/65819)
+
 ## Basic
 
 `apropos` to search the "name" sections of all manual pages. Usually a wrapper for the `man -k`.
