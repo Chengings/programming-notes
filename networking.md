@@ -16,7 +16,8 @@
  - [IP Address Geolocation: BigDataCloud](https://www.bigdatacloud.com/ip-geolocation/what-is-my-ip)
 
 📚
- - [Diagnosing Network Issues with MTR](https://www.linode.com/docs/networking/diagnostics/diagnosing-network-issues-with-mtr/)
+ * [Diagnosing Network Issues with MTR](https://www.linode.com/docs/networking/diagnostics/diagnosing-network-issues-with-mtr/)
+ * https://en.wikipedia.org/wiki/IEEE_802
 
 ---
 
