@@ -7,7 +7,7 @@
 📦
  - https://github.com/
 
-📚 is guide and tutorial
+📚 is reference, guide and tutorial
  - https://developer.mozilla.org/
  
 
