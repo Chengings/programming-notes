@@ -6,6 +6,10 @@
 
 [Why is printf better than echo?](https://unix.stackexchange.com/a/65819)
 
+📚
+* https://en.wikipedia.org/wiki/List_of_Unix_commands
+* https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
+
 ## Basic
 
 `apropos` to search the "name" sections of all manual pages. Usually a wrapper for the `man -k`.
