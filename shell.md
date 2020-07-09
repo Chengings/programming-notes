@@ -9,6 +9,7 @@
 📚
 * https://en.wikipedia.org/wiki/List_of_Unix_commands
 * https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
+* [POSIX.1-2017 Online Document](https://pubs.opengroup.org/onlinepubs/9699919799/)
 
 ## Basic
 
