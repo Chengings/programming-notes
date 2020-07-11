@@ -96,6 +96,11 @@ Resume a specific job  and run it in the background
 
 `bg <job_id>`
 
+Dot (.) is:
+* Current directory https://en.wikipedia.org/wiki/Path_(computing)#Unix_style
+* Execute commands in the current environment (Equivalent to `source`) https://en.wikipedia.org/wiki/Dot_(command) && another good explanation  https://unix.stackexchange.com/a/114306
+* Hidden file and directory https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory#Unix_and_Unix-like_environments
+
 ---
 ## Network
 
