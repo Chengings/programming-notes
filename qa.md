@@ -16,3 +16,7 @@ A: Just remove `~/.zcompdump*`. https://github.com/ohmyzsh/ohmyzsh/issues/518#is
 __Q: I can't use `source` inside cron?__
 
 A: By default, cron runs in `/bin/sh` which doesn't have `source` unless you specfic SHELL environment variable in cron to `bin/bash`, or use `.`(sh POSIX standard). Furthermore, if your script is executable (x) you don't need to put `.` or `source`, just execute it `* * * * * ~/executable.sh`
+
+__Q: Where is cron log?__
+
+A: In Debian, check `/var/log/syslog`. None for Darwin.
