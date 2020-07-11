@@ -15,6 +15,7 @@ Be careful about shebang (#!/usr/bin/env bash) https://unix.stackexchange.com/a/
 * https://en.wikipedia.org/wiki/List_of_Unix_commands
 * https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
 * [POSIX.1-2017 Online Document](https://pubs.opengroup.org/onlinepubs/9699919799/)
+* https://www.gnu.org/software/bash/manual/html_node/index.html
 
 ## Basic
 
@@ -110,7 +111,10 @@ Dot (.) is:
 * `( cmd1; cmd2; cmd3 )` single round brackets: a command list embedded between parentheses runs as a subshell.
 * `$( cmd1 )` single dollar round brackets: [command substitution](https://en.wikipedia.org/wiki/Command_substitution)
 * `(( expression ))` double round brackets: [Bash's shell arithmetic](https://www.gnu.org/software/bash/manual/html_node/Shell-Arithmetic.html). This one will return exit code only.
-* `$(( expression ))` double dollar round brackets: [Bash's arithmetic expansion](https://www.gnu.org/software/bash/manual/html_node/Arithmetic-Expansion.html#Arithmetic-Expansion). Like shell arithmetic but this one will return output result, instead of exit code.
+* `$(( expression ))` double dollar round brackets: [Bash's arithmetic expansion](https://www.gnu.org/software/bash/manual/html_node/Arithmetic-Expansion.html#Arithmetic-Expansion) similar shell arithmetic but this one will return output result, instead of exit code.
+* `<( cmd1 )` angle round brackets: [process substitution](https://en.wikipedia.org/wiki/Process_substitution) allows the input or output of a command to appear as a file.
+* `[ expression ]` single square brackets and `[[]]` double square brackets: [Bash's conditional Expressions](https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html#Bash-Conditional-Expressions) is an alternate version of the built-in `test`. Yes, `[` is a Bash shell command!!!
+* `{ }` single curly brackets: [Bash's brace expansion](https://en.wikipedia.org/wiki/Bash_(Unix_shell)#Brace_expansion)
 
 ---
 ## Network
