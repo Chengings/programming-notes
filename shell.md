@@ -6,6 +6,11 @@
 
 [Why is printf better than echo?](https://unix.stackexchange.com/a/65819)
 
+Be careful about shebang (#!/usr/bin/env bash) https://unix.stackexchange.com/a/496960
+> If the shebang is #!/bin/bash and you start the script as __./script the script will be executed by bash__. Absolutely no problem here.
+
+> However, if you execute zsh ./script or __source it . ./script to the running zsh instance, it is quite common that the syntax of bash and zsh won't match.__
+
 📚
 * https://en.wikipedia.org/wiki/List_of_Unix_commands
 * https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
