@@ -16,6 +16,7 @@ Be careful about shebang (#!/usr/bin/env bash) https://unix.stackexchange.com/a/
 * https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
 * [POSIX.1-2017 Online Document](https://pubs.opengroup.org/onlinepubs/9699919799/)
 * https://www.gnu.org/software/bash/manual/html_node/index.html
+* https://wiki.bash-hackers.org/scripting/nonportable
 
 ## Basic
 
