@@ -12,6 +12,8 @@
 
 [Networking](./networking.md)
 
+[Operating systems](./os.md)
+
 [PHP](./php.md)
 
 [Question & Answer (Q&A)](./qa.md)
