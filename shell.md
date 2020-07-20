@@ -35,7 +35,7 @@ type rs-shell
 # rs-shell is an alias for exec /bin/zsh -l
 ```
 
-Standard input (FD 0), standard output (FD 1) and standard error (FD 2)
+Standard input (FD 0), standard output (FD 1) and standard error (FD 2). https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_07
 
 ```sh
 ls existing.txt no.file >export_ls.txt
@@ -44,14 +44,14 @@ ls existing.txt no.file 1>export_ls.txt
 ```
 
 ```sh
-ls existing.txt no.file >export_ls.txt 2>/dev/null`
+ls existing.txt no.file >export_ls.txt 2>/dev/null
 # Redirect FD 1 to the file "export_ls.txt" and FD 2 to the file "/dev/null/"
 ```
 
 ```sh
 # Redirecting standard output and standard error
-ls existing.txt no.file >export_ls.txt 2>&1
-ls existing.txt no.file &>export_ls.txt
+ls existing.txt no.file >export_ls.txt 2>&1 # POSIX
+ls existing.txt no.file &>export_ls.txt # Bash
 # Make FD 1 target "export_ls.txt" and FD 2 target FD 1's target
 ```
 
