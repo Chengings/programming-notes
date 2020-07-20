@@ -11,6 +11,8 @@ Be careful about shebang (#!/usr/bin/env bash) https://unix.stackexchange.com/a/
 
 > However, if you execute zsh ./script or __source it . ./script to the running zsh instance, it is quite common that the syntax of bash and zsh won't match.__
 
+Use `command -v <cmd>` instead of `which` https://stackoverflow.com/a/677212
+
 📚
 * https://en.wikipedia.org/wiki/List_of_Unix_commands
 * https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
