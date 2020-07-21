@@ -13,12 +13,15 @@ Be careful about shebang (#!/usr/bin/env bash) https://unix.stackexchange.com/a/
 
 Use `command -v <cmd>` instead of `which` https://stackoverflow.com/a/677212
 
+Use `basenc` to encode/decode base64-url https://man7.org/linux/man-pages/man1/basenc.1.html
+
 📚
 * https://en.wikipedia.org/wiki/List_of_Unix_commands
 * https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
 * [POSIX.1-2017 Online Document](https://pubs.opengroup.org/onlinepubs/9699919799/)
 * https://www.gnu.org/software/bash/manual/html_node/index.html
 * https://wiki.bash-hackers.org/scripting/nonportable
+* [The Linux man-pages project](https://www.kernel.org/doc/man-pages/) and [Online man pages: man7.org](https://man7.org/linux/man-pages/index.html)
 
 ## Basic
 
