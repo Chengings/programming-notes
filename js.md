@@ -54,6 +54,8 @@ let temp = obj.first;
 let nestedProp = ((temp === null || temp === undefined) ? undefined : temp.second);
 ```
 
+Use `Intl.DateTimeFormat().resolvedOptions().timeZone` to get timezone. https://stackoverflow.com/a/34602679
+
 ## Node.js
 
 📦
