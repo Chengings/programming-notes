@@ -71,3 +71,16 @@ params.get('q');
 // 123
 
 ```
+
+## Character (https://en.wikipedia.org/wiki/Regular_expression#Character_classes)
+
+| POSIX | ASCII | VIM |
+| ----- | ----- | --- |
+| [:digit:]	    | [0-9]         | \d |
+| [:xdigit:]    | [A-Fa-f0-9]   | \x |
+| [:lower:]     | [a-z]         | \l |
+| [:upper:]     | [A-Z]         | \u |
+| [:alpha:]     | [A-Za-z]      | \a |
+| [:alnum:]     | [A-Za-z0-9]   | |
+| [:blank:]     | [ \t]	        | \s |
+| [:space:]     | [ \t\r\n\v\f]	| \\_s |
