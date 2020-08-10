@@ -205,7 +205,7 @@ do
 done
 ```
 
---
+---
 ## Filenames and Pathnames in Shell: How to do it Correctly (   https://dwheeler.com/essays/filenames-in-shell.html)
 
 ```sh
@@ -222,3 +222,11 @@ for file in ./* ; do      # Use this, NOT "for file in *" (beware empty lists)
 ...
 done
 ```
+
+---
+## Home (https://en.wikipedia.org/wiki/Home_directory)
+| OS | Path |
+| -- | ---- |
+| Android	| /data/media/userid |
+| BSD/Linux | /home/username     |
+| macOS	   | /Users/username    |
