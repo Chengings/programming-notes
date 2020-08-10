@@ -14,6 +14,7 @@
  - [Ipleak](https://ipleak.net/)
  - [IP Address Fraud Checker: Scamalytics](https://scamalytics.com/)
  - [IP Address Geolocation: BigDataCloud](https://www.bigdatacloud.com/ip-geolocation/what-is-my-ip)
+ - [IP Address Geolocation: ipdata](https://ipdata.co/)
 
 📚
  * [Diagnosing Network Issues with MTR](https://www.linode.com/docs/networking/diagnostics/diagnosing-network-issues-with-mtr/)
