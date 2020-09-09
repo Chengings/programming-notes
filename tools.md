@@ -7,3 +7,5 @@
 [a list of software (SaaS, PaaS, IaaS, etc.) and other offerings that have free tiers for developers](https://free-for.dev/)
 
 [JSON Beautifier & Validator](https://duckduckgo.com/?q=json+formatter)
+
+[Squoosh: an image compression web app](https://squoosh.app/)
