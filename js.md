@@ -56,6 +56,8 @@ let nestedProp = ((temp === null || temp === undefined) ? undefined : temp.secon
 
 Use `Intl.DateTimeFormat().resolvedOptions().timeZone` to get timezone. https://stackoverflow.com/a/34602679
 
+⭐️ [Natively Format JavaScript Numbers](https://elijahmanor.com/blog/format-js-numbers)
+
 ## Node.js
 
 📦
