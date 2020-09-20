@@ -5,3 +5,5 @@
 [Cryptographic Best Practices](https://gist.github.com/atoponce/07d8d4c833873be2f68c34f9afc5a78a)
 
 [OWASP Cheat Sheet Series: collection of high value information on specific application security topics](https://cheatsheetseries.owasp.org/index.html)
+
+[Authorization and Authentication for Everyone](https://dev.to/auth0ambassadors/authorization-and-authentication-for-everyone-4ol8)
