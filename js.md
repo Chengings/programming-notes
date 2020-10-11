@@ -69,6 +69,7 @@ Node.js has a built-in debug log method [stefanjudis](https://www.stefanjudis.co
 
 [It’s about time to embrace Node.js Streams](https://slides.com/lucianomammino/its-about-time-to-embrace-streams-node-manchjs)
 
+⭐️ [How To Set Up An Express API Backend Project With PostgreSQL](https://www.smashingmagazine.com/2020/04/express-api-backend-project-postgresql/)
 ## React
 
 [Life cycle](https://busypeoples.github.io/post/react-component-lifecycle/)
