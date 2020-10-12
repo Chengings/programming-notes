@@ -46,7 +46,7 @@ for (let i = 1; i <= n; i++) {
 ````
 
 Optional chaining `?.`, instead of causing an error if a reference is nullish (null or undefined), the expression short-circuits with a return value of `undefined`.
-```
+```javascript
 let nestedProp = obj.first && obj.first.second;
 let nestedProp = obj.first?.second; // optional chaining
 // equivalent
@@ -57,6 +57,13 @@ let nestedProp = ((temp === null || temp === undefined) ? undefined : temp.secon
 Use `Intl.DateTimeFormat().resolvedOptions().timeZone` to get timezone. https://stackoverflow.com/a/34602679
 
 ⭐️ [Natively Format JavaScript Numbers](https://elijahmanor.com/blog/format-js-numbers)
+
+⭐️ [Use `Object.entries()` to loop object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
+```javascript
+for (const [key, value] of Object.entries(object1)) {
+  console.log(`${key}: ${value}`);
+}
+```
 
 ## Node.js
 
