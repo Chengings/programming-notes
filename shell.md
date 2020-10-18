@@ -222,6 +222,24 @@ for file in ./* ; do      # Use this, NOT "for file in *" (beware empty lists)
 ...
 done
 ```
+---
+## Filename and extension extraction (https://stackoverflow.com/a/965069)
+
+```sh
+FILE="example.tar.gz"
+
+echo "${FILE%%.*}"
+example
+
+echo "${FILE%.*}"
+example.tar
+
+echo "${FILE#*.}"
+tar.gz
+
+echo "${FILE##*.}"
+gz
+```
 
 ---
 ## Home (https://en.wikipedia.org/wiki/Home_directory)
