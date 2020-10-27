@@ -9,3 +9,8 @@
 [JSON Beautifier & Validator](https://duckduckgo.com/?q=json+formatter)
 
 [Squoosh: an image compression web app](https://squoosh.app/)
+
+## DNS
+
+📚
+* How to install DNSCrypt-Proxy on Linux with Pi-hole guid https://github.com/pi-hole/pi-hole/wiki/DNSCrypt-2.0
