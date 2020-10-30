@@ -113,6 +113,10 @@ Dot (.) is:
 * Execute commands in the current environment (Equivalent to `source`) https://en.wikipedia.org/wiki/Dot_(command) && another good explanation  https://unix.stackexchange.com/a/114306
 * Hidden file and directory https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory#Unix_and_Unix-like_environments
 
+Backslash (\\) is
+* Escape character, it preserves the literal value of the next character that follows.
+* Backlash pairs with newline \<newline> will be removed from the input stream and effectively ignored, so it is treated as a line continuation
+
 [Brackets](https://www.assertnotmagic.com/2018/06/20/bash-brackets-quick-reference/)
 * `( cmd1; cmd2; cmd3 )` single round brackets: a command list embedded between parentheses runs as a subshell.
 * `$( cmd1 )` single dollar round brackets: [command substitution](https://en.wikipedia.org/wiki/Command_substitution)
