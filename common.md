@@ -72,8 +72,8 @@ params.get('q');
 
 ```
 
-## Character (https://en.wikipedia.org/wiki/Regular_expression#Character_classes)
-
+## Character
+https://en.wikipedia.org/wiki/Regular_expression#Character_classes
 | POSIX | ASCII | VIM |
 | ----- | ----- | --- |
 | [:digit:]	    | [0-9]         | \d |
@@ -84,3 +84,9 @@ params.get('q');
 | [:alnum:]     | [A-Za-z0-9]   | |
 | [:blank:]     | [ \t]	        | \s |
 | [:space:]     | [ \t\r\n\v\f]	| \\_s |
+
+https://en.wikipedia.org/wiki/Glob_(programming)#Compared_to_regular_expressions
+| glob | regular expression |
+| ---- | ------------------ |
+| ?    | .
+| *    | .*
