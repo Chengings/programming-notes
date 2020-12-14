@@ -1,6 +1,6 @@
 # Common
 
-## String Interpolation (https://en.wikipedia.org/wiki/String_interpolation)
+## String Interpolation https://en.wikipedia.org/wiki/String_interpolation
 
 Bash
 ```bash
@@ -10,7 +10,7 @@ echo "I have $apples apples"
 echo "I have ${apples} apples"
 ```
 
-JavaScript (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+JavaScript https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 ```javascript
 const apples = 4;
 const bananas = 3;
@@ -90,3 +90,33 @@ https://en.wikipedia.org/wiki/Glob_(programming)#Compared_to_regular_expressions
 | ---- | ------------------ |
 | ?    | .
 | *    | .*
+
+## Null coalescing operator https://en.wikipedia.org/wiki/Null_coalescing_operator
+Bash
+```bash
+#suppliedTitle='supplied title'
+title=${suppliedTitle:-'Default title'}
+echo "$title" # prints: Default title
+```
+
+JavaScript
+```javascript
+const title = suppliedTitle ?? 'Default title'; // null or undefined
+const title = suppliedTitle || 'Default title'; // Any falsy value: null, undefined, "", 0, NaN, false
+```
+
+PHP
+```php
+$title = $suppliedTitle ?? 'Default title';
+// strictly for NULL or a non-existent variable/array index/property. In this respect, it acts similarly to isset() 
+```
+
+Python
+```python
+title = suppliedTitle or "Default title"
+42    or "something"  # returns 42
+0     or "something"  # returns "something"
+None  or "something"  # returns "something"
+False or "something"  # returns "something"
+""    or "something"  # returns "something"
+```
