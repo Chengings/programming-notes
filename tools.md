@@ -14,3 +14,8 @@
 
 📚
 * How to install DNSCrypt-Proxy on Linux with Pi-hole guid https://github.com/pi-hole/pi-hole/wiki/DNSCrypt-2.0
+
+## Docker
+
+📚
+* Dockerfile best practices https://github.com/hexops/dockerfile
