@@ -22,6 +22,7 @@ Use `basenc` to encode/decode base64-url https://man7.org/linux/man-pages/man1/b
 * https://www.gnu.org/software/bash/manual/html_node/index.html
 * https://wiki.bash-hackers.org/scripting/nonportable
 * [The Linux man-pages project](https://www.kernel.org/doc/man-pages/) and [Online man pages: man7.org](https://man7.org/linux/man-pages/index.html)
+* [Command Line Interface Guidelines](https://clig.dev/#guidelines)
 
 ## Basic
 
