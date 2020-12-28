@@ -78,6 +78,7 @@ ls -l /var/log | tee var-log.txt | less # by default, tee will overwrite/create 
 date | tee -a log.txt # -a is append option
 date | sudo tee date.txt log.txt
 ```
+![Tee](assets/tee.svg)
 
 heredoc `<<` uses to feed data to a program without storing it in an external file and must followed by any identifier. For example, mine is 'ichiwa'
 ```sh
