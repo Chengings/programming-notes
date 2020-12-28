@@ -71,6 +71,14 @@ echo World >>~/world
 # Make FD x append to the end of file.
 ```
 
+tee https://en.wikipedia.org/wiki/Tee_(command)
+```sh
+# Copies standard input to standard output and displays the standard input result.
+ls -l /var/log | tee var-log.txt | less # by default, tee will overwrite/create the file.
+date | tee -a log.txt # -a is append option
+date | sudo tee date.txt log.txt
+```
+
 heredoc `<<` uses to feed data to a program without storing it in an external file and must followed by any identifier. For example, mine is 'ichiwa'
 ```sh
 cat <<ichiwa
