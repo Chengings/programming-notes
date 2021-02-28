@@ -6,6 +6,8 @@
 
 [CSS](./css.md)
 
+[Database](./db.md)
+
 [HTML](./html.md)
 
 [JavaScript](./js.md)
