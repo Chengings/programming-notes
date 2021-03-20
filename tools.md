@@ -19,3 +19,9 @@
 
 📚
 * Dockerfile best practices https://github.com/hexops/dockerfile
+
+Exclude sub-folder in volumes https://stackoverflow.com/a/37898591
+```yml
+volumes:
+   - /var/cache/
+```
