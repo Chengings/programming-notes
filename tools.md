@@ -19,6 +19,7 @@
 
 📚
 * Dockerfile best practices https://github.com/hexops/dockerfile
+* A curated list of Docker Compose samples https://github.com/docker/awesome-compose
 
 ### Exclude sub-folder in volumes
 ```yml
