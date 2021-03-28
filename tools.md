@@ -21,6 +21,11 @@
 * Dockerfile best practices https://github.com/hexops/dockerfile
 * A curated list of Docker Compose samples https://github.com/docker/awesome-compose
 
+## Install on Pi
+1. Follow this guide https://docs.docker.com/engine/install/debian/
+2. `sudo pip3 install docker-compose`. Must have python3 and pip3.
+3. `sudo systemctl enable docker` to enable docker to system service.
+
 ### Exclude sub-folder in volumes
 ```yml
 volumes:
