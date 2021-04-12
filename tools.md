@@ -20,6 +20,7 @@
 📚
 * Dockerfile best practices https://github.com/hexops/dockerfile
 * A curated list of Docker Compose samples https://github.com/docker/awesome-compose
+* Tutorial & Samples https://docs.docker.com/samples/
 
 ## Install on Pi
 1. Follow this guide https://docs.docker.com/engine/install/debian/
@@ -34,9 +35,9 @@ volumes:
 https://stackoverflow.com/a/37898591
 
 ### [Docker for Mac] Caching options for bind-mounted volume
-* Consistent: Host and container have an identical view of the mount at all times.
-* Cached: Permit delays before updates on the host appear in the container.
-* Delegated: Permit delays before updates on the container appear in the host.
+* **Consistent**: Host and container have an identical view of the mount at all times.
+* **Cached**: Permit delays before updates on the host appear in the container.
+* **Delegated**: Permit delays before updates on the container appear in the host.
 ```yml
 volumes:
    - '~/jenkins/:/var/jenkins_home:delegated'
