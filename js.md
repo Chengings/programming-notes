@@ -1,5 +1,10 @@
 # JavaScript
 
+📚
+ * The Modern JavaScript Tutorial https://javascript.info
+
+---
+
 ⭐️ [Practical Ways to Write Better JavaScript](https://dev.to/taillogs/practical-ways-to-write-better-javascript-26d4)
 
 [Array Distinct](https://codeburst.io/javascript-array-distinct-5edc93501dc4)
