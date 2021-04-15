@@ -5,10 +5,10 @@
 📦 is a packages list
 
 📦
- - https://github.com/
+ * https://github.com/
 
 📚 is reference, guide and tutorial
- - https://developer.mozilla.org/
+ * https://developer.mozilla.org/
  
 
 ---
