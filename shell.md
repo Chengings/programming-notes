@@ -260,3 +260,31 @@ gz
 | Android	| /data/media/userid |
 | BSD/Linux | /home/username     |
 | macOS	   | /Users/username    |
+
+## Shell init (https://github.com/rbenv/rbenv/wiki/unix-shell-initialization#shell-init-files)
+
+### Zsh 
+1. /etc/zshenv or /etc/zsh/zshenv (can't be overriden)
+2. $ZDOTDIR/.zshenv
+3. login mode:
+   1. /etc/zprofile
+   2. $ZDOTDIR/.zprofile
+4. interactive:
+   1. /etc/zshrc
+   2. $ZDOTDIR/.zshrc
+5. login mode:
+   1. /etc/zlogin
+   2. $ZDOTDIR/.zlogin
+
+Opening a new Terminal: $ZDOTDIR/.zshenv +  $ZDOTDIR/.zprofile +  ~/.zshlogin
+
+logining shell (via SSH): $ZDOTDIR/.zshenv +  $ZDOTDIR/.zprofile +  $ZDOTDIR/.zshrc +  ~/.zshlogin
+
+Executing a command remotely with ssh (e.g. `ssh remote_machine 'date'`): $ZDOTDIR/.zprofile +  $ZDOTDIR/.zshenv
+
+That's mean __`.zprofile`__ is a candidate place to put custom setting that required in any mode.
+
+__Note from Zshdoc (http://zsh.sourceforge.net/Intro/intro_3.html)__
+> `.zprofile` is similar to `.zlogin`, except that it is sourced before `.zshrc`.
+
+> `.zlogin` is not the place for alias definitions, options, environment variable settings, etc.
