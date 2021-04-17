@@ -136,7 +136,7 @@ Backslash (\\) is
 * `[ expression ]` single square brackets and `[[]]` double square brackets: [Bash's conditional Expressions](https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html#Bash-Conditional-Expressions) is an alternate version of the built-in `test`. Yes, `[` is a Bash shell command!!!
 * `{ }` single curly brackets: [Bash's brace expansion](https://en.wikipedia.org/wiki/Bash_(Unix_shell)#Brace_expansion)
 
----
+
 ## Network
 
 `ifconfig` display the link and address status of network interfaces
@@ -160,7 +160,7 @@ traceroute -q 10 wikipedia.org # set the number of probes to 10 probes
 ```
 
 ![Image of Traceroute Diagram](assets/traceroute_diagram.webp)
----
+
 ## Brace Expansion
 
 Brace expansion generates a set of alternative combinations. Generated results need not exist as files.
@@ -219,7 +219,6 @@ do
 done
 ```
 
----
 ## Filenames and Pathnames in Shell: How to do it Correctly (   https://dwheeler.com/essays/filenames-in-shell.html)
 
 ```sh
@@ -236,7 +235,7 @@ for file in ./* ; do      # Use this, NOT "for file in *" (beware empty lists)
 ...
 done
 ```
----
+
 ## Filename and extension extraction (https://stackoverflow.com/a/965069)
 
 ```sh
@@ -255,7 +254,6 @@ echo "${FILE##*.}"
 gz
 ```
 
----
 ## Home (https://en.wikipedia.org/wiki/Home_directory)
 | OS | Path |
 | -- | ---- |
