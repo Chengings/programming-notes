@@ -276,15 +276,17 @@ gz
    1. /etc/zlogin
    2. $ZDOTDIR/.zlogin
 
-Opening a new Terminal: $ZDOTDIR/.zshenv +  $ZDOTDIR/.zprofile + $ZDOTDIR/.zshrc
+Opening a new Terminal or access via SSH (interacitve mode): $ZDOTDIR/.zshenv +  $ZDOTDIR/.zprofile + $ZDOTDIR/.zshrc
 
-Log in shell (via SSH): $ZDOTDIR/.zshenv +  $ZDOTDIR/.zprofile + $ZDOTDIR/.zshlogin
+Log in shell: $ZDOTDIR/.zshenv +  $ZDOTDIR/.zprofile + $ZDOTDIR/.zshlogin
 
-Executing a command remotely with ssh (e.g. `ssh remote_machine 'date'`): $ZDOTDIR/.zprofile +  $ZDOTDIR/.zshenv
+Executing a command remotely with ssh (e.g. `ssh remote_machine 'date'`) or run a shell script: $ZDOTDIR/.zprofile +  $ZDOTDIR/.zshenv
 
-That means __`.zprofile`__ is a candidate place to put custom setting that required in any mode.
+macOS and Linux have different meaning between graphical mode [shell-modes], that means __`.zprofile`__ is a candidate place to put custom setting that required in any mode.
 
 __Note from Zshdoc (http://zsh.sourceforge.net/Intro/intro_3.html)__
 > `.zprofile` is similar to `.zlogin`, except that it is sourced before `.zshrc`.
 
 > `.zlogin` is not the place for alias definitions, options, environment variable settings, etc.
+
+[shell-modes]: https://github.com/rbenv/rbenv/wiki/unix-shell-initialization#shell-modes
