@@ -276,13 +276,13 @@ gz
    1. /etc/zlogin
    2. $ZDOTDIR/.zlogin
 
-Opening a new Terminal: $ZDOTDIR/.zshenv +  $ZDOTDIR/.zprofile +  ~/.zshlogin
+Opening a new Terminal: $ZDOTDIR/.zshenv +  $ZDOTDIR/.zprofile + $ZDOTDIR/.zshrc
 
-logining shell (via SSH): $ZDOTDIR/.zshenv +  $ZDOTDIR/.zprofile +  $ZDOTDIR/.zshrc +  ~/.zshlogin
+Log in shell (via SSH): $ZDOTDIR/.zshenv +  $ZDOTDIR/.zprofile + $ZDOTDIR/.zshlogin
 
 Executing a command remotely with ssh (e.g. `ssh remote_machine 'date'`): $ZDOTDIR/.zprofile +  $ZDOTDIR/.zshenv
 
-That's mean __`.zprofile`__ is a candidate place to put custom setting that required in any mode.
+That means __`.zprofile`__ is a candidate place to put custom setting that required in any mode.
 
 __Note from Zshdoc (http://zsh.sourceforge.net/Intro/intro_3.html)__
 > `.zprofile` is similar to `.zlogin`, except that it is sourced before `.zshrc`.
