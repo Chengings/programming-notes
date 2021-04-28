@@ -21,5 +21,6 @@ Password in this file contains contains algorith ID, salt and hash ("$id$salt$ha
 
 📚
  * [Awesome Raspberry Pi](https://github.com/thibmaek/awesome-raspberry-pi)
+ * [The Raspberry Pi Guide for scientists and anyone else](https://raspberrypi-guide.github.io/)
 
 `pinout`: a utility for querying Raspberry Pi GPIO pin-out information. https://raspberrypi.stackexchange.com/a/106645
