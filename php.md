@@ -45,3 +45,94 @@ if (null === $user) {
     $user = $this->createGuestUser();
 }
 ```
+
+## PHP 8
+
+__Constructor Property Promotion__ https://wiki.php.net/rfc/constructor_promotion
+
+PHP < 8
+```php
+class Point {
+    public float $x;
+    public float $y;
+    public float $z;
+ 
+    public function __construct(
+        float $x = 0.0,
+        float $y = 0.0,
+        float $z = 0.0,
+    ) {
+        $this->x = $x;
+        $this->y = $y;
+        $this->z = $z;
+    }
+}
+```
+
+PHP ≥ 8
+```php
+class Point {
+    public function __construct(
+        public float $x = 0.0,
+        public float $y = 0.0,
+        public float $z = 0.0,
+    ) {}
+}
+```
+
+__Match expression v2__ https://wiki.php.net/rfc/match_expression_v2
+
+PHP < 8
+```php
+switch ($this->lexer->lookahead['type']) {
+    case Lexer::T_SELECT:
+        $statement = $this->SelectStatement();
+        break;
+ 
+    case Lexer::T_UPDATE:
+        $statement = $this->UpdateStatement();
+        break;
+ 
+    case Lexer::T_DELETE:
+        $statement = $this->DeleteStatement();
+        break;
+ 
+    default:
+        $this->syntaxError('SELECT, UPDATE or DELETE');
+        break;
+}
+```
+
+PHP ≥ 8
+```php
+$statement = match ($this->lexer->lookahead['type']) {
+    Lexer::T_SELECT => $this->SelectStatement(),
+    Lexer::T_UPDATE => $this->UpdateStatement(),
+    Lexer::T_DELETE => $this->DeleteStatement(),
+    default => $this->syntaxError('SELECT, UPDATE or DELETE'),
+};
+```
+
+__Nullsafe operator__ https://wiki.php.net/rfc/nullsafe_operator
+
+PHP < 8
+```php
+$country =  null;
+ 
+if ($session !== null) {
+    $user = $session->user;
+ 
+    if ($user !== null) {
+        $address = $user->getAddress();
+ 
+        if ($address !== null) {
+            $country = $address->country;
+        }
+    }
+}
+```
+
+PHP ≥ 8
+```php
+$country = $session?->user?->getAddress()?->country;
+```
