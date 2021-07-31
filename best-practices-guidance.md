@@ -8,6 +8,8 @@
 
 [Authorization and Authentication for Everyone](https://dev.to/auth0ambassadors/authorization-and-authentication-for-everyone-4ol8)
 
+[Naming conventions](https://github.com/kettanaito/naming-cheatsheet)
+
 # Style Guide
 
 [Google developer documentation style guide](https://developers.google.com/style/highlights)
