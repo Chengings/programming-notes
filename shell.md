@@ -18,11 +18,40 @@ Use `basenc` to encode/decode base64-url https://man7.org/linux/man-pages/man1/b
 📚
 * https://en.wikipedia.org/wiki/List_of_Unix_commands
 * https://en.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
-* [POSIX.1-2017 Online Document](https://pubs.opengroup.org/onlinepubs/9699919799/)
 * https://www.gnu.org/software/bash/manual/html_node/index.html
-* https://wiki.bash-hackers.org/scripting/nonportable
 * [The Linux man-pages project](https://www.kernel.org/doc/man-pages/) and [Online man pages: man7.org](https://man7.org/linux/man-pages/index.html)
 * [Command Line Interface Guidelines](https://clig.dev/#guidelines)
+
+## POSIX
+
+### Quoting
+
+Single (') is **strong** quoting, what you see is what you get.
+
+Double (") is **weak** quoting, allow certain characters to have a special meaning.
+
+```sh
+echo '$HOME'
+# $HOME
+echo "$HOME"
+# /home/pi
+echo "Don't forget"
+# Don't forget
+echo 'Warning! Missing keyword: "end"'
+# Warning! Missing keyword: "end"
+
+echo "My home directory is $HOME, and my account is $USER"
+echo 'My home directory is '$HOME', and my account is '$USER
+echo 'My home directory is '"$HOME"', and my account is '"$USER"
+# My home directory is /home/pi, and my account is pi
+
+echo "Next year is $(expr $(date +%Y) + 1)"     # Command substitution
+```
+
+📚
+* https://wiki.bash-hackers.org/scripting/nonportable
+* [POSIX.1-2017 Online Document](https://pubs.opengroup.org/onlinepubs/9699919799/)
+* [POSIX Shell Tutorial](https://www.grymoire.com/Unix/Sh.html)
 
 ## Basic
 
