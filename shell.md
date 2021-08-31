@@ -54,6 +54,16 @@ echo "Next year is $(expr $(date +%Y) + 1)"     # Command substitution
 * [POSIX Shell Tutorial](https://www.grymoire.com/Unix/Sh.html)
 
 ## Basic
+`set` to display the names and values of all shell variables. [The Open Group' set](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#set), [GNU's set](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin)
+```sh
+set
+# UID=1000
+# USER=pi
+# USERNAME=pi
+# VENDOR=unknown
+# VIRTUAL_ENV_DISABLE_PROMPT=12
+# VISUAL=nano
+```
 
 `apropos` to search the "name" sections of all manual pages. Usually a wrapper for the `man -k`.
 ```sh
