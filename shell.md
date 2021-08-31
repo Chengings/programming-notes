@@ -48,13 +48,41 @@ echo 'My home directory is '"$HOME"', and my account is '"$USER"
 echo "Next year is $(expr $(date +%Y) + 1)"     # Command substitution
 ```
 
+### Parameter Expansion
+
+[The Open Group's Parameter Expansionset](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06_02), [GNU's Parameter Expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
+
+The basic form of parameter expansion is `${parameter}`.
+
+Colon (:) tests **unset/null**. Omission of the colon tests unset only.
+
+form | parameter is unset | parameter is set & not null | parameter is null | meaning
+---- | ------------------ | --------------------------- | ----------------- | -------
+${parameter?word} | error & exit | parameter | null | yell if undefined
+${parameter-word} | word | parameter | null | use word (default) if undefined
+${parameter=word} | word | parameter | null | redefine if undefined
+${parameter+word} | null | word | word | change if parameter is defined
+${parameter:?word} | error & exit | parameter | error & exit | yell if undefined/null
+${parameter:-word} | assign word | parameter | word | use word (default) if undefined/null ⭐️
+${parameter:=word} | assign word | parameter | assign word | use word if parameter is undefined/null
+${parameter:+word} | null | word | null | use word (default) if parameter is defined and not null
+
+```sh
+${ME:-"A complex phrase with spaces, variables like $HOME or $(date)"}
+${MAXUSERS:-$(cat /etc/passwd | wc -l)}      # Get value from /etc/passwd if MAXUSER is null/undefine.
+
+echo ${ME:?}
+# sh: ME: parameter not set
+echo "${ME:?Please define ME}"                # Set standard error message if ME is null/undefined
+```
+
 📚
 * https://wiki.bash-hackers.org/scripting/nonportable
 * [POSIX.1-2017 Online Document](https://pubs.opengroup.org/onlinepubs/9699919799/)
 * [POSIX Shell Tutorial](https://www.grymoire.com/Unix/Sh.html)
 
 ## Basic
-`set` to display the names and values of all shell variables. [The Open Group' set](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#set), [GNU's set](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin)
+`set` to display the names and values of all shell variables. [The Open Group's set](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#set), [GNU's set](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin)
 ```sh
 set
 # UID=1000
