@@ -31,8 +31,21 @@ Use `basenc` to encode/decode base64-url https://man7.org/linux/man-pages/man1/b
 apropos copy
 ```
 
-`type` to display the kind of a command
+`command` and `type` to display the kind of a command
 ```sh
+command -v tldr
+# /usr/local/bin/tldr
+command -V tldr
+# tldr is /usr/local/bin/tldr
+command -v brew-update
+# alias brew-update='brew update; brew outdated'
+command -V brew-update
+# brew-update is an alias for brew update; brew outdated
+command -v rs-shell
+# alias rs-shell='exec $SHELL -l'
+command -V rs-shell
+# rs-shell is an alias for exec $SHELL -l
+
 type tldr
 # tldr is /usr/local/bin/tldr
 type brew-update
