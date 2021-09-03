@@ -192,6 +192,27 @@ Ctrl-Z
 
 `bg <job_id>` Resume a specific job  and run it in the background
 
+`xargs` stands for eXtended arguments. Construct	argument list(s) and execute utility. [The Open Group's xargs](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/xargs.html), [man7's xargs](https://man7.org/linux/man-pages/man1/xargs.1.html), [FreeBSD's xargs](https://www.freebsd.org/cgi/man.cgi?query=xargs&sektion=1)
+
+```sh
+# note: echo doesn't accept stdin, only string argument.
+# use `xargs` to contruct string arguments and execute utility `echo` to print files in `/bin`.
+ls /bin | xargs echo
+# (I)nsert mode. Same result. Can be any options such as % {} _ ^
+ls /bin | xargs -I % echo %
+# limit maximum arguments to 4 per time
+ls /bin | xargs -n 4 echo
+# trace mode. Print the command line on the standard error before executing it.
+ls /bin | xargs -t echo
+# read text file as standard input and download file by using `curl -O`.
+# -n limit argument to 1
+# -P (non-POSIX) enable parallel mode. Set option to 0, xargs will run as many processes as possible simultaneously.
+xargs -P 0 -n 1 curl -O <urls.txt
+# > curl -O https://example.com/file1
+# > curl -O https://example.com/file2
+# > curl -O https://example.com/file3
+```
+
 Dot (.) is:
 * Current directory https://en.wikipedia.org/wiki/Path_(computing)#Unix_style
 * Execute commands in the current environment (Equivalent to `source`) https://en.wikipedia.org/wiki/Dot_(command) && another good explanation  https://unix.stackexchange.com/a/114306
