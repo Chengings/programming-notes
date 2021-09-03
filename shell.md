@@ -151,7 +151,7 @@ echo World >>~/world
 # Make FD x append to the end of file.
 ```
 
-tee https://en.wikipedia.org/wiki/Tee_(command)
+`tee` https://en.wikipedia.org/wiki/Tee_(command)
 ```sh
 # Copies standard input to standard output and displays the standard input result.
 ls -l /var/log | tee var-log.txt | less # by default, tee will overwrite/create the file.
@@ -177,7 +177,7 @@ cat <<<'I love you so much.
 I know I am naive.'
 ```
 
-Run a job in the background
+`&` Run a job in the background
 ```sh
 <command> &
 
@@ -186,17 +186,11 @@ Run a job in the background
 Ctrl-Z
 ```
 
-Show status of all jobs
+`jobs` Show status of all jobs
 
-`jobs`
+`fg <job_id>` Bring a specific job to foreground
 
-Bring a specific job to foreground
-
-`fg <job_id>`
-
-Resume a specific job  and run it in the background
-
-`bg <job_id>`
+`bg <job_id>` Resume a specific job  and run it in the background
 
 Dot (.) is:
 * Current directory https://en.wikipedia.org/wiki/Path_(computing)#Unix_style
