@@ -70,6 +70,14 @@ for (const [key, value] of Object.entries(object1)) {
 }
 ```
 
+### null vs. undefined
+
+`null` represents the intentional absence of any object value. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null), [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/#sec-null-value)
+
+`undefined` is used when a variable has not been assigned a value. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined), [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/#sec-undefined-value)
+
+[Dr. Axel Rauschmayer's undefined vs. null revisited](https://2ality.com/2021/01/undefined-null-revisited.html) // including weird 🙃 js behaviour, fun to read 
+
 ## Node.js
 
 📦
