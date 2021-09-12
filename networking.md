@@ -27,7 +27,7 @@
 
 [Reserved Domains](https://en.wikipedia.org/wiki/Top-level_domain#Reserved_domains)
 
-## Wirdguard (https://www.wireguard.com/)
+## Wireguard (https://www.wireguard.com/)
 
 ⭐️ [Some Unofficial WireGuard Documentation](https://github.com/pirate/wireguard-docs)
 
