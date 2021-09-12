@@ -10,7 +10,7 @@
  - [Speedtest + Ping: testmy.net](https://testmy.net)
  - [Dns leak test](https://dnsleaktest.com/)
  - [Dns performance](https://www.dnsperf.com/)
- - [am.i.mullvad.net](https://am.i.mullvad.net/)
+ - [am.i.mullvad.net](https://mullvad.net/en/check/)
  - [Ipleak](https://ipleak.net/)
  - [IP Address Fraud Checker: Scamalytics](https://scamalytics.com/)
  - [IP Address Geolocation: BigDataCloud](https://www.bigdatacloud.com/ip-geolocation/what-is-my-ip)
