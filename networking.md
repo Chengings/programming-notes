@@ -27,6 +27,71 @@
 
 [Reserved Domains](https://en.wikipedia.org/wiki/Top-level_domain#Reserved_domains)
 
+## NTP and About Time
+
+> NTP  uses  __UTC__,  as  distinct  from  the  Greenwich  Mean  Time  (GMT),  as  the  reference  clock  standard.  UTC  uses  the  TAI  time  standard.
+>
+> NTP is an “absolute” time protocol. This conversion from UTC to the wall-clock time, namely the local date and time, is left to the local host.
+>
+> NTP operates over the User Datagram Protocol (UDP). An NTP server listens for client NTP packets on port 123.
+>
+> Clustering of the time signals is performed to reject outlier servers, and then the algorithm __selects the server with the lowest stratum with minimal offset and jitter values__. The algorithm used by NTP to perform this operation is Marzullo’s Algorithm
+>
+> When NTP is configured on a client, it attempts to keep the client clock synchronized against the reference time standard. To do this task NTP conventionally __adjusts the local time by small offsets__ (larger offsets may cause side effects on running applications, as has been found when processing leap seconds). This small adjustment is undertaken by an adjtime() system call, which slews the clock by altering the frequency of the software clock until the time correction is achieved
+>
+> The ISP Column  A monthly column on things Internet,  March 2014 , Geoff Huston
+
+### My gist
+
+* Use chrony if possible. Red Hat, Fedora, Amazon and Facebook switched to this software.
+* Use 4+ various time sources, e.g. tech giant, academic/non-profit, official  and NTP pool.
+
+### Use Enough Time Sources
+
+Sources SHOULD be diverse. Having more than 4 sources are reliability.
+
+References:
+* https://datatracker.ietf.org/doc/html/rfc8633#section-3.2
+* https://docs.ntpsec.org/latest/quick.html#howmany
+
+### Use cases of NTP
+
+* Authentication + Encryption: TOTP, LDAP, RADIUS, SSL + TLS, IPSEC, DNSSEC
+* Logging
+* Scheduled tasks/events: cron
+
+References:
+* https://digital.nhs.uk/services/health-and-social-care-network/hscn-technical-guidance/hscn-network-time-protocol-guidance
+
+### Public NTP services
+
+🧙🏻‍♂️: Official timekeeper
+🔐: DNSSEC
+🛰: GNSS
+⚛️: Atomic clock
+🗼: Radio time singal
+
+[SIDN Labs 🔐🛰🗼🇳🇱](https://time.nl/index_en.html)
+
+[National Physical Laboratory 🧙🏻‍♂️⚛️🇬🇧](https://www.npl.co.uk/products-services/time-frequency/internet-time)
+
+[Swedish Distributed Time Service 🧙🏻‍♂️🔐⚛️🇸🇪](https://www.ntp.se/)
+
+[Google Public NTP ⚛️](https://developers.google.com/time/)
+
+[Facebook Public NTP 🛰⚛️](https://engineering.fb.com/2020/03/18/production-engineering/ntp-service/)
+
+[Cloudflare Time Services 🔐](https://www.cloudflare.com/en-gb/time/)
+
+
+### See Also
+
+https://chrony.tuxfamily.org/
+
+https://weberblog.net/ntp/
+
+Reference Clock Support https://docs.ntpsec.org/latest/refclock.html and also check their site for manual and configurations (detailed).
+
 ## Wireguard (https://www.wireguard.com/)
 
 ⭐️ [Some Unofficial WireGuard Documentation](https://github.com/pirate/wireguard-docs)
