@@ -90,6 +90,8 @@ https://chrony.tuxfamily.org/
 
 https://weberblog.net/ntp/
 
+https://www.satsignal.eu/ntp/index.html
+
 Reference Clock Support https://docs.ntpsec.org/latest/refclock.html and also check their site for manual and configurations (detailed).
 
 ## Wireguard (https://www.wireguard.com/)
