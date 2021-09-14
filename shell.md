@@ -76,6 +76,17 @@ echo ${ME:?}
 echo "${ME:?Please define ME}"                # Set standard error message if ME is null/undefined
 ```
 
+### Special Parameters
+
+@: Expands to the positional parameters, starting from one. That is, "$@" is equivalent to "$1" "$2" ….
+
+?: Expands to the decimal exit status of the most recent pipeline.
+```sh
+curl nohost.localhost
+echo $? 
+> 6         # Exit status 6 means "Couldn't resolve host. The given remote host was not resolved."
+```
+
 📚
 * https://wiki.bash-hackers.org/scripting/nonportable
 * [POSIX.1-2017 Online Document](https://pubs.opengroup.org/onlinepubs/9699919799/)
