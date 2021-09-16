@@ -33,17 +33,3 @@ volumes:
    - /var/cache/
 ```
 https://stackoverflow.com/a/37898591
-
-### [Docker for Mac] Caching options for bind-mounted volume
-* **Consistent**: Host and container have an identical view of the mount at all times.
-* **Cached**: Permit delays before updates on the host appear in the container.
-* **Delegated**: Permit delays before updates on the container appear in the host.
-```yml
-volumes:
-   - '~/jenkins/:/var/jenkins_home:delegated'
-   - '~/environment_keys:/var/data:cached'
-```
-https://stackoverflow.com/a/63437557
-
-https://engageinteractive.co.uk/blog/making-docker-faster-on-mac#why-is-it-slower
-
