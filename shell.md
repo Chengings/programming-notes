@@ -102,6 +102,10 @@ With Elif and else `if test-commands; then consequent-commands; elif more-test-c
 
 If **TEST-COMMANDS** is exexuted and return status is **zero (0)** then CONSEQUENT-COMMANDS is executed.
 
+```sh
+if grep -q 'software' /usr/share/man/man1/mkdir.1; then echo 'Found'; fi
+```
+
 ### set
 
 `set` to display the names and values of all shell variables. [The Open Group's set](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#set), [GNU's set](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin)
