@@ -8,6 +8,15 @@
  * [SQL Language Expressions](https://sqlite.org/lang_expr.html)
 
 ## SQLite
+
+SQLite doesn't suitable for these use cases
+* Remote data
+* Big data
+* Concurrent writers
+* Gazillion transactions/second
+
+Source: [sqlite.org talks](https://www.sqlite.org/talks/cmu-20150917.odp)
+
 📦
  * "SQL.js" allows you to create a relational database and query it entirely in the browser https://github.com/sql-js/sql.js
  * "Litestream" is a standalone streaming replication tool for SQLite. It runs as a background process and safely replicates changes incrementally to another file or S3. https://github.com/benbjohnson/litestream
