@@ -1,7 +1,5 @@
 # Database
 
----
-
 ## SQL
 📚
  * https://en.wikipedia.org/wiki/SQL_syntax
