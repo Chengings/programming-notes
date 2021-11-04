@@ -28,4 +28,4 @@ Password in this file contains contains algorith ID, salt and hash ("$id$salt$ha
 
 ### Set DNS Servers
 
-Add `static domain_name_servers=1.2.3.4 5.6.7.8` to `/etc/dhcpcd.conf` file. [Configuring Networking](https://www.raspberrypi.com/documentation/computers/configuration.html#static-ip-addresses)
+Add `static domain_name_servers=1.2.3.4 5.6.7.8` to `/etc/dhcpcd.conf` file and restart dhcpd service by using `sudo systemctl restart dhcpd.service`. [Configuring Networking](https://www.raspberrypi.com/documentation/computers/configuration.html#static-ip-addresses)
