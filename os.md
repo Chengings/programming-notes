@@ -21,6 +21,7 @@ Password in this file contains contains algorith ID, salt and hash ("$id$salt$ha
 
 📚
  * [Official Documentation](https://www.raspberrypi.com/documentation/)
+ * [My Raspberry Pi OS cheat sheet](https://gist.github.com/Chengings/48e18165244e03a6eb0c3cdaadaf82b7#file-raspios-sh)
  * [Awesome Raspberry Pi](https://github.com/thibmaek/awesome-raspberry-pi)
  * [The Raspberry Pi Guide for scientists and anyone else](https://raspberrypi-guide.github.io/)
 
