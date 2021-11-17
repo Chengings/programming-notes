@@ -10,6 +10,8 @@
 
 [badssl.com: testing clients against bad SSL configs](https://badssl.com)
 
+[Modern unix tools](https://github.com/ibraheemdev/modern-unix)
+
 ## DNS
 
 📚
