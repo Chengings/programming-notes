@@ -8,15 +8,6 @@
 
 ⭐️ [Practical Ways to Write Better JavaScript](https://dev.to/taillogs/practical-ways-to-write-better-javascript-26d4)
 
-[Array Distinct](https://codeburst.io/javascript-array-distinct-5edc93501dc4)
-```javascript
-const arrayUniq = arrayNotUniq.filter((value, index, self) => {
-        return self.indexOf(value) === index
-    })
-// es6
-const arrayUniq = [...new Set(arrayNotUniq)]
-```
-
 ⭐️ [JavaScript & Node.js Testing Best Practices](https://github.com/goldbergyoni/javascript-testing-best-practices)
 
 [Writing a Simple MVC App in Plain JavaScript](https://www.taniarascia.com/javascript-mvc-todo-app/)
@@ -28,8 +19,6 @@ const arrayUniq = [...new Set(arrayNotUniq)]
 // Highlight: closures and this
 
 ⭐️ [A Re-Introduction To Destructuring Assignment](https://www.smashingmagazine.com/2019/09/reintroduction-destructuring-assignment/)
-
-⭐️ [Fireship's Javascript Iteration and Loops](https://fireship.io/snippets/javascript-loops-pro-tips/)
 
 [Clone array](https://www.samanthaming.com/tidbits/35-es6-way-to-clone-an-array)
 ```javascript
@@ -64,20 +53,35 @@ Use `Intl.DateTimeFormat().resolvedOptions().timeZone` to get timezone. https://
 
 ⭐️ [Natively Format JavaScript Numbers](https://elijahmanor.com/blog/format-js-numbers)
 
-⭐️ [Use `Object.entries()` to loop object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
-```javascript
-for (const [key, value] of Object.entries(object1)) {
-  console.log(`${key}: ${value}`);
-}
-```
-
 ### null vs. undefined
 
 `null` represents the intentional absence of any object value. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null), [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/#sec-null-value)
 
 `undefined` is used when a variable has not been assigned a value. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined), [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/#sec-undefined-value)
 
-[Dr. Axel Rauschmayer's undefined vs. null revisited](https://2ality.com/2021/01/undefined-null-revisited.html) // including weird 🙃 js behaviour, fun to read 
+[Dr. Axel Rauschmayer's undefined vs. null revisited](https://2ality.com/2021/01/undefined-null-revisited.html) // including weird 🙃 js behaviour, fun to read
+
+### Loop & List
+
+[Dr. Axel Rauschmayer's Looping over Arrays: for vs. for-in vs. .forEach() vs. for-of](https://2ality.com/2021/01/looping-over-arrays.html) // use "forEach" or "for of" if possible.
+
+⭐️ [Fireship's Javascript Iteration and Loops](https://fireship.io/snippets/javascript-loops-pro-tips/)
+
+[Array Distinct](https://codeburst.io/javascript-array-distinct-5edc93501dc4)
+```javascript
+const arrayUniq = arrayNotUniq.filter((value, index, self) => {
+        return self.indexOf(value) === index
+    })
+// es6
+const arrayUniq = [...new Set(arrayNotUniq)]
+``` 
+
+[Use `Object.entries()` to loop object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
+```javascript
+for (const [key, value] of Object.entries(object1)) {
+  console.log(`${key}: ${value}`);
+}
+```
 
 ## Node.js
 
