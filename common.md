@@ -1,6 +1,7 @@
 # Common
 
 📚
+ * ⭐️ https://www.programming-idioms.org/
  * Go & Node.js https://github.com/miguelmota/golang-for-nodejs-developers
 
 ## String Interpolation https://en.wikipedia.org/wiki/String_interpolation
