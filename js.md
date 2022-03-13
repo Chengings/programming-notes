@@ -53,6 +53,43 @@ Use `Intl.DateTimeFormat().resolvedOptions().timeZone` to get timezone. https://
 
 ⭐️ [Natively Format JavaScript Numbers](https://elijahmanor.com/blog/format-js-numbers)
 
+[The most modern Javascript I know](https://jott.live/markdown/new_js) // ⬇ new > es6 features at a glance
+```js
+class Thing {
+
+  constructor(data) {
+    this.data_ = data
+    this.show_thing = true
+    this.display_loop()
+  }
+
+  async display_loop() {
+    while (this.show_thing) {
+
+      this.display_thing()
+
+      await new Promise((resolve) => {
+        requestAnimationFrame(resolve)
+      })
+    }
+  }
+  
+  display_thing() {
+    const canvas = document.querySelector('#output_canvas')
+    // ...
+  }
+  
+  get data() {
+    return this.data_
+  }
+
+}
+
+const d = new Float32Array(128)
+d.fill(11) // fill with the number 11
+let t = new Thing(d)
+```
+
 ### null vs. undefined
 
 `null` represents the intentional absence of any object value. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null), [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/#sec-null-value)
@@ -83,6 +120,8 @@ for (const [key, value] of Object.entries(object1)) {
 }
 ```
 
+---
+
 ## Node.js
 
 📦
@@ -90,6 +129,7 @@ for (const [key, value] of Object.entries(object1)) {
  - pm2: process manager https://github.com/Unitech/pm2
 
 ---
+
 Node.js has a built-in debug log method [stefanjudis](https://www.stefanjudis.com/today-i-learned/node-js-has-a-built-in-debug-method/) | [Node.js](https://nodejs.org/api/util.html#util_util_debuglog_section)
 
 [It’s about time to embrace Node.js Streams](https://slides.com/lucianomammino/its-about-time-to-embrace-streams-node-manchjs)
