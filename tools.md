@@ -12,6 +12,17 @@
 
 [Modern unix tools](https://github.com/ibraheemdev/modern-unix)
 
+## Browser devtools
+
+### Local Overrides
+Local overrides allow *permanent change* in local development. It will be remained on page reload and affected in every tab.
+
+Edge or chromium-based browser https://docs.microsoft.com/en-gb/microsoft-edge/devtools-guide-chromium/javascript/overrides
+
+Webkit: it also has features to override request and response.
+https://webkit.org/web-inspector/local-overrides/
+
+
 ## DNS
 
 📚
