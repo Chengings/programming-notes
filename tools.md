@@ -23,11 +23,6 @@ Webkit: it also has features to override request and response.
 https://webkit.org/web-inspector/local-overrides/
 
 
-## DNS
-
-📚
-* How to install DNSCrypt-Proxy on Linux with Pi-hole guid https://github.com/pi-hole/pi-hole/wiki/DNSCrypt-2.0
-
 ## Docker
 
 📚
