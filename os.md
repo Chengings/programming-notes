@@ -154,7 +154,7 @@ All other `launchd` jobs are skipped when the computer is turned off or asleep; 
 
 Consequently, if the computer is always off at the job’s scheduled time, both `cron` jobs and `launchd` jobs never run. For example, if you always turn your computer off at night, a job scheduled to run at 1 A.M. will never be run.
 
-### Load, Unload, Debug, Enable and Disable
+#### Load, Unload, Debug, Enable and Disable
 ```shell
 launchctl load -w ~/Library/LaunchAgents/my.name.gitpull.plist
 
@@ -168,6 +168,9 @@ launchctl disable my.name.gitpull
 
 launchctl unload -w ~/Library/LaunchAgents/my.name.gitpull.plist
 
+# List non-apple daemon services
+
+launchctl list | grep -v com.apple | sort --key 3
 ```
 
 **References**
