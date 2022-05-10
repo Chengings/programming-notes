@@ -1,9 +1,9 @@
-# Operating symtems
+# Operating systems
 
 📚
  * [SUSE Linux Enterprise Server Documentation](https://documentation.suse.com/sles/15-SP1/html/SLES-all/index.html): Detailed documentations that  cover almost everything about Unix-like system. E.g. sudo, rsync, booting system, systemd, networking, file system, Apache HTTP server and Docker.
+ * [The Linux kernel user’s and administrator’s guide](https://www.kernel.org/doc/html/latest/admin-guide/index.html): The following is a collection of user-oriented documents that have been added to the kernel.org over time. There is, as yet, little overall order or organisation here — this material was not written to be a single, coherent document!
  * Filesystem Hierarchy Standard: https://refspecs.linuxfoundation.org/fhs.shtml and https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
-
 
 ---
 
