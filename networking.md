@@ -103,3 +103,22 @@ Reference Clock Support https://docs.ntpsec.org/latest/refclock.html and also ch
 
 [Wireguard: archlinux](https://wiki.archlinux.org/index.php/WireGuard)
 
+## Link-local address
+
+Link-local addresses are used for communication between two hosts (which are there on the same link) when no other IP address is specified.
+
+In simple words, at the time of booting up, OS tries to configure an address on its interface through various methods like
+
+-   Manual Configuration
+-   DHCP (DHCPv4 or DHCPv6)
+-   SLAAC (Stateless Autoconfiguration) -- Unique to IPv6
+
+And if ==OS isn't able to configure an address on the interface through any of the automatic methods, then it configures an address on the interface from the link-local pool.==
+
+-   169.254.0.0/16 -- Link-local address pool in IPv4 address space
+-   fe80::/10 -- Link-local address pool in IPv6 address space
+
+### See also
+* https://en.wikipedia.org/wiki/Link-local_address
+* https://networkengineering.stackexchange.com/a/35959
+
