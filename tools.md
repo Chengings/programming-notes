@@ -64,6 +64,29 @@ RUN pip install --requirement /tmp/requirements.txt
 COPY . /tmp/
 ```
 
+**Distroless**
+
+Repository: https://github.com/GoogleContainerTools/distroless
+
+Distroless images contain only your application and its runtime dependencies. They do not contain package managers, shells or any other programs you would expect to find in a standard Linux distribution.
+
+[Actix-Web in Docker: How to build small and secure images](https://dev.to/sergeyzenchenko/actix-web-in-docker-how-to-build-small-and-secure-images-2mjd) #rust
+>Just replace alpine with gcr.io/distroless/cc-debian10 and nothing else. No need to use Musl target. This image contains Libc. The size is 15 Mb larger than alpine, but still small enough.
+>
+>It’s a good practice to use distroless images in production even if you don't have issues with Musl builds.
+
+[Distroless Containers: Hype or True Value?](https://hackernoon.com/distroless-containers-hype-or-true-value-2rfl3wat)
+> However, even for the Go software it can be tricky to run in a scratch container. For example, if you need to process HTTPS traffic, you need to bring the CA certificates yourself. Debugging can also be tricky, because you don’t have a shell to execute, but Docker allows you to start a full fledged debugging container and attach that to the process space of the specimen container
+> 
+> That said, the distroless trend is absolutely the right direction.
+> 
+> […]
+> 
+> We, at Avenga, have used distroless containers in production environments for more than 3 months and are already using multi-stage builds. We weren’t there from the beginning but we were forced, by the security restrictions of our customer to do that. And it worked like a charm (of course with proper orchestration and logging management).
+> 
+> I can’t say that I am solidly in one of the camps Jacek mentioned above (except for camp 1 :) ) because, as it usually happens in IT, it depends on many factors. But for sure, distroless images are a thing and you definitely should give it a try.
+
+
 ### Install on Pi
 1. Follow this guide https://docs.docker.com/engine/install/debian/
 2. `sudo pip3 install docker-compose`. Must have python3 and pip3.
