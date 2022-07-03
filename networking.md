@@ -27,6 +27,8 @@
 
 [Reserved Domains](https://en.wikipedia.org/wiki/Top-level_domain#Reserved_domains)
 
+[Addressing the challenges of modern DNS a comprehensive tutorial](https://www.sciencedirect.com/science/article/pii/S1574013722000132)
+
 ## NTP and About Time
 
 > NTP  uses  __UTC__,  as  distinct  from  the  Greenwich  Mean  Time  (GMT),  as  the  reference  clock  standard.  UTC  uses  the  TAI  time  standard.
