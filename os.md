@@ -13,9 +13,9 @@ Password in this file contains contains algorith ID, salt and hash ("$id$salt$ha
 ### Temporary folder https://en.wikipedia.org/wiki/Temporary_folder
 * `/tmp` is for more temporary files and must be made available for programs that require temporary files.
 * `/var/tmp`  is for persistent files (as it may be preserved over reboots) .
-* `TMPDIR` for Unix and [POSIX][]. `TEMP`, `TEMPDIR` and `TMP` for non-POSIX.
+* `TMPDIR` for Unix and [POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap08.html). `TEMP`, `TEMPDIR` and `TMP` for non-POSIX.
 
-[POSIX]: https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap08.html
+Some system doesn't have `TMPDIR`, to use in shell script try this `"${TMPDIR:-/tmp}"`
 
 ## Raspberry Pi
 
