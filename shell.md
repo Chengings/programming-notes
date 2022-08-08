@@ -109,6 +109,24 @@ If **TEST-COMMANDS** is executed and return status is **zero (0)** then CONSEQUE
 if grep -q 'software' /usr/share/man/man1/mkdir.1; then echo 'Found'; fi
 ```
 
+### Loop
+
+#### for
+```sh
+for name [ in [word ... ]]
+# for name [ in "$@" ]
+do
+    compound-list
+done
+```
+
+**Exit Status**: The exit status of a `for` command shall be the exit status of the last command that executes. If there are no items, the exit status shall be **zero**.
+
+📚
+- [[The Open Group's Compound Commands](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_09_04)
+- https://en.wikipedia.org/wiki/For_loop#1989:_Bash
+- [Bash's Looping](https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html)
+
 ### set
 
 `set` to display the names and values of all shell variables. [The Open Group's set](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#set), [GNU's set](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin)
