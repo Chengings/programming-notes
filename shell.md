@@ -123,7 +123,7 @@ done
 Exit Status: The exit status of a `for` command shall be the exit status of the last command that executes. If there are no items, the exit status shall be zero.
 
 📚
-- [[The Open Group's Compound Commands](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_09_04)
+- [The Open Group's Compound Commands](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_09_04)
 - https://en.wikipedia.org/wiki/For_loop#1989:_Bash
 - [Bash's Looping](https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html)
 
