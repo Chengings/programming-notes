@@ -86,7 +86,7 @@ echo "${ME:?Please define ME}"                # Set standard error message if ME
 ?: Expands to the decimal exit status of the most recent pipeline.
 ```sh
 curl nohost.localhost
-echo $? 
+echo $?
 > 6         # Exit status 6 means "Couldn't resolve host. The given remote host was not resolved."
 ```
 
@@ -121,6 +121,38 @@ done
 ```
 
 Exit Status: The exit status of a `for` command shall be the exit status of the last command that executes. If there are no items, the exit status shall be zero.
+
+#### while
+
+```sh
+while compound-list-1
+do
+    compound-list-2
+done
+```
+Execute "compound-list-2" as long as "compound-list-1" has an exit status of zero.
+
+Exit status: The exit status of the `while` loop shall be the exit status of the last "compound-list-2" executed, or zero if none was executed.
+
+```sh
+while read dict_word
+do
+	touch "$dict_word"
+done < /usr/share/dict/words
+```
+
+```sh
+# Additional improvements
+while IFS= read -r dict_word
+do
+	touch "$dict_word"
+done < /usr/share/dict/words
+```
+Above command will crate a new file with the first field of each line moved to the end of the line. `read`[^read-util] will return non-zero exit status if end-of-file was detected or an error occurred.
+
+For an improvement version:
+- `read` wouldn't trim leading and trailing whitespace from each line if (un)set Internal Field Separator (IFS)[^shell_variables] to `IFS=`
+- `read -r` is raw option to prevent backslashes from being interpreted as escape sequences.
 
 📚
 - [The Open Group's Compound Commands](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_09_04)
@@ -188,8 +220,10 @@ ls existing.txt no.file &>export_ls.txt # Bash
 # Make FD 1 target "export_ls.txt" and FD 2 target FD 1's target
 ```
 
-`read line <file.txt`
-Read from 'file.txt'
+```sh
+read line <file.txt
+```
+Read[^read-util] from 'file.txt'
 
 ```sh
 # Appending file redirection
@@ -405,7 +439,7 @@ gz
 
 ## Shell init (https://github.com/rbenv/rbenv/wiki/unix-shell-initialization#shell-init-files)
 
-### Zsh 
+### Zsh
 1. /etc/zshenv or /etc/zsh/zshenv (can't be overriden)
 2. $ZDOTDIR/.zshenv
 3. login mode:
@@ -424,11 +458,15 @@ Log in shell: $ZDOTDIR/.zshenv +  $ZDOTDIR/.zprofile + $ZDOTDIR/.zshlogin
 
 Executing a command remotely with ssh (e.g. `ssh remote_machine 'date'`) or run a shell script: $ZDOTDIR/.zprofile +  $ZDOTDIR/.zshenv
 
-macOS and Linux have different meaning between graphical mode [shell-modes], that means __`.zprofile`__ is a candidate place to put custom setting that required in any mode.
+macOS and Linux have different meaning between graphical mode [^shell-modes], that means __`.zprofile`__ is a candidate place to put custom setting that required in any mode.
 
 __Note from Zshdoc (http://zsh.sourceforge.net/Intro/intro_3.html)__
 > `.zprofile` is similar to `.zlogin`, except that it is sourced before `.zshrc`.
 
 > `.zlogin` is not the place for alias definitions, options, environment variable settings, etc.
 
-[shell-modes]: https://github.com/rbenv/rbenv/wiki/unix-shell-initialization#shell-modes
+[^shell-modes]: https://github.com/rbenv/rbenv/wiki/unix-shell-initialization#shell-modes
+
+[^read-util]: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/read.html
+
+[^shell_variables]: https://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html#tag_02_05_03
