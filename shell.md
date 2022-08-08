@@ -103,7 +103,7 @@ Basic syntax `if TEST-COMMANDS; then CONSEQUENT-COMMANDS; fi`
 
 With Elif and else `if test-commands; then consequent-commands; elif more-test-commands; then more-consequents; else alternate-consequents; fi`
 
-If **TEST-COMMANDS** is exexuted and return status is **zero (0)** then CONSEQUENT-COMMANDS is executed.
+If **TEST-COMMANDS** is executed and return status is **zero (0)** then CONSEQUENT-COMMANDS is executed.
 
 ```sh
 if grep -q 'software' /usr/share/man/man1/mkdir.1; then echo 'Found'; fi
