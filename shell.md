@@ -81,7 +81,7 @@ echo "${ME:?Please define ME}"                # Set standard error message if ME
 
 ### Special Parameters
 
-@: Expands to the positional parameters, starting from one. That is, "$@" is equivalent to "$1" "$2" ….
+@: Expands to the positional parameters, starting from one. That is, `$@` is equivalent to `"$1" "$2" ….`
 
 ?: Expands to the decimal exit status of the most recent pipeline.
 ```sh
