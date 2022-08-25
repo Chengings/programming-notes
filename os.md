@@ -10,12 +10,27 @@
 Linux, BSD and Unix systems, the encrypted credentials are stored in `/etc/shadow` or `/etc/master.passwd`.
 Password in this file contains contains algorith ID, salt and hash ("$id$salt$hashed"). For example, `$1$s83Ugoff$EDT83WAAFpCQHWDp07E9Ux`. "$1$" is MD5, "$5$" is SHA-256 and "$6$" is SHA-512.
 
-### Temporary folder https://en.wikipedia.org/wiki/Temporary_folder
+### Temporary folder & shared memory
 * `/tmp` is for more temporary files and must be made available for programs that require temporary files.
 * `/var/tmp`  is for persistent files (as it may be preserved over reboots) .
 * `TMPDIR` for Unix and [POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap08.html). `TEMP`, `TEMPDIR` and `TMP` for non-POSIX.
+* `/dev/shm` is a system-wide shared memory in the form of a [RAM disk](https://en.wikipedia.org/wiki/RAM_disk)Debian uses tmpfs [^wiki_tmpfs][^kernel_tmpfs] for `/dev/shm` and `/run`
 
-Some system doesn't have `TMPDIR`, to use in shell script try this `"${TMPDIR:-/tmp}"`
+Some system doesn't have `TMPDIR`, to use in shell script try this `"${TMPDIR:-/tmp}"`  
+
+```
+┌───────────┬──────────────┬────────────────┐
+│ /dev/shm  │ always tmpfs │ Linux specific │
+├───────────┼──────────────┼────────────────┤
+│ /tmp      │ can be tmpfs │ FHS 1.0        │
+├───────────┼──────────────┼────────────────┤
+│ /var/tmp  │ never tmpfs  │ FHS 1.0        │
+└───────────┴──────────────┴────────────────┘
+```
+
+ https://en.wikipedia.org/wiki/Temporary_folder
+ https://en.wikipedia.org/wiki/Shared_memory
+ [Appropriate use of various tmp directories](https://superuser.com/a/1030777)
 
 ## Raspberry Pi
 
@@ -178,3 +193,6 @@ launchctl list | grep -v com.apple | sort --key 3
 * https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html#//apple_ref/doc/uid/10000172i-SW1-SW1
 * https://www.launchd.info/
 * `man launchd.plist` `man launchd` `man launchctl`
+
+[^kernel_tmpfs]: https://www.kernel.org/doc/Documentation/filesystems/tmpfs.txt
+[^wiki_tmpfs]: https://en.wikipedia.org/wiki/Tmpfs
