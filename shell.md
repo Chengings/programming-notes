@@ -79,6 +79,61 @@ echo ${ME:?}
 echo "${ME:?Please define ME}"                # Set standard error message if ME is null/undefined
 ```
 
+#### Substring removal
+
+https://wiki.bash-hackers.org/syntax/pe#substring_removal
+ 
+**From the beginning (Prefix)**
+`${parameter#[word]}` Remove smallest pattern
+`${parameter##[word]}` Remove largest pattern
+
+```sh
+MYSTRING='Be liberal in what you accept, and conservative in what you send'
+echo ${MYSTRING#*in}
+ what you accept, and conservative in what you send
+
+echo ${MYSTRING##*in}
+ what you send
+```
+
+**From the end (Suffix)**
+`${parameter%[word]}`   Remove smallest pattern
+`${parameter%%[word]}`   Remove largest pattern
+
+```sh
+MYSTRING='Be liberal in what you accept, and conservative in what you send'
+echo ${MYSTRING%in*}
+Be liberal in what you accept, and conservative 
+
+echo ${MYSTRING%%in*}
+Be liberal 
+```
+
+**Common use**
+
+Filepath manipulation
+```sh
+FILE="/home/user/example.tar.gz"
+
+echo "${FILE##*/}"
+example.tar.gz
+
+echo "${FILE#*.}"
+tar.gz
+
+echo "${FILE##*.}"
+gz
+
+echo "${FILE%%.*}"
+/home/user/example
+  
+echo "${FILE%.*}"
+/home/user/example.tar
+
+echo "${FILE%/*}"
+/home/user
+```
+
 ### Special Parameters
 
 @: Expands to the positional parameters, starting from one. That is, `$@` is equivalent to `"$1" "$2" ….`
