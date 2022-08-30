@@ -53,7 +53,7 @@ echo "Next year is $(expr $(date +%Y) + 1)"     # Command substitution
 
 ### Parameter Expansion
 
-[The Open Group's Parameter Expansionset](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06_02), [GNU's Parameter Expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
+[The Open Group's Parameter Expansion](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06_02), [GNU's Parameter Expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
 
 The basic form of parameter expansion is `${parameter}`.
 
