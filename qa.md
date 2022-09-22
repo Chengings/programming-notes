@@ -20,3 +20,7 @@ A: By default, cron runs in `/bin/sh` which doesn't have `source` unless you spe
 __Q: Where is cron log?__
 
 A: In Debian, check `/var/log/syslog`. None for Darwin.
+
+**Q: HDMI doesn't work on macOS**
+
+A: [Reset NVRAM](https://support.apple.com/HT204063) via this command `Option + Command + P + R`. https://forums.macrumors.com/threads/hdmi-port-no-longer-working-after-update-to-macos-11-big-sur.2268966/page-5?post=30857888#post-30857888
