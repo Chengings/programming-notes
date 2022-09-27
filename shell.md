@@ -156,12 +156,28 @@ echo $?
 
 Basic syntax `if TEST-COMMANDS; then CONSEQUENT-COMMANDS; fi`
 
-With Elif and else `if test-commands; then consequent-commands; elif more-test-commands; then more-consequents; else alternate-consequents; fi`
+Alternate form uses square bracket with space `test TEST-COMMANDS; [ TEST-COMMANDS ]`
+
+With elif and else `if test-commands; then consequent-commands; elif more-test-commands; then more-consequents; else alternate-consequents; fi`
 
 If **TEST-COMMANDS** is executed and return status is **zero (0)** then CONSEQUENT-COMMANDS is executed.
 
+Run `man [`  or `man test` to open **test** manual
+
 ```sh
-if grep -q 'software' /usr/share/man/man1/mkdir.1; then echo 'Found'; fi
+if grep --quiet 'software' /usr/share/man/man1/mkdir.1; then echo 'Found "software"'; fi
+
+one=1
+if [ ${one} -eq 1 ]
+then
+	echo "One is ${one}"
+else
+	echo 'This is else'
+fi
+
+# Equivalent to above statement.
+test ${one} -eq 1 && echo "One is ${one}" \
+|| echo 'This is else'
 ```
 
 ### Loop
