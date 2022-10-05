@@ -17,6 +17,9 @@ Use `basenc` to encode/decode base64-url https://man7.org/linux/man-pages/man1/b
 
 Maximum bash's random number ($RANDOM) is 32767. Min is 0. [Bash's random.c](https://github.com/bminor/bash/blob/f3a35a2d601a55f337f8ca02a541f8c033682247/lib/sh/random.c#L98)
 
+To disable shell history temporarily, open new terminal session and enter `unset HISTFILE`. https://www.gnu.org/software/bash/manual/html_node/Bash-History-Facilities.html
+> If `HISTFILE` is unset, or if the history file is unwritable, the history is not saved.
+
 📚
 * [Opengroup's POSIX.1-2017](https://pubs.opengroup.org/onlinepubs/9699919799/)
 * https://en.wikipedia.org/wiki/List_of_Unix_commands
