@@ -12,6 +12,8 @@
 
 [JavaScript](./js.md)
 
+[Latency](./latency.md)
+
 [Networking](./networking.md)
 
 [Operating systems](./os.md)
