@@ -2,7 +2,7 @@
 
 📚
  * The Modern JavaScript Tutorial https://javascript.info
- * [Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
+ * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
 ---
 
