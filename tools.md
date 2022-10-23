@@ -32,6 +32,23 @@ https://webkit.org/web-inspector/local-overrides/
 * Dockerfile best practices https://github.com/hexops/dockerfile
 * A curated list of Docker Compose samples https://github.com/docker/awesome-compose
 
+### CLI
+
+#### cp
+
+https://docs.docker.com/engine/reference/commandline/cp/
+
+copy files/folders between a container and the local filesystem.
+
+```sh
+docker cp container:src_path dest_path|-
+
+docker cp ./some_file container:/work
+docker cp container:/var/logs/ /tmp/app_logs 
+# The command assumes container paths are relative to the container’s `/` (root) directory, works w/o forward slash.
+docker cp container:var/logs/ /tmp/app_logs
+```
+
 ### Dockerfile
 - Must begin with a `FROM`. ^[https://docs.docker.com/engine/reference/builder/#from]
 - Also support `ENV` and `ARG` statements
