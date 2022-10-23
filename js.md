@@ -3,6 +3,7 @@
 📚
  * The Modern JavaScript Tutorial https://javascript.info
  * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+ * [Intl Explorer is a tool for experimenting and trying out the ECMAScript Internationalization API](https://www.intl-explorer.com/)
 
 ---
 
