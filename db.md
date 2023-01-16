@@ -42,3 +42,28 @@ Source: [sqlite.org talks](https://www.sqlite.org/talks/cmu-20150917.odp)
 
 Gist
  * Avoid putting SQLite database files **on NFS** if multiple processes might try to access the file at the same time. https://www.sqlite.org/faq.html#q5
+
+# MySQL
+
+📚
+- [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)
+	- [SELECT statement](https://dev.mysql.com/doc/refman/8.0/en/select.html)
+	- [UPDATE statement](https://dev.mysql.com/doc/refman/8.0/en/update.html)
+	- [JOIN clause](https://dev.mysql.com/doc/refman/8.0/en/join.html)
+	- Functions and operators
+		- [Built-in such as `=`, `<>`, `DATE()`, `LIKE()`, `FLOOR()`](https://dev.mysql.com/doc/refman/8.0/en/built-in-function-reference.html)
+		- [String (including regular expression)](https://dev.mysql.com/doc/refman/8.0/en/string-functions.html)
+
+**Duplicate Table**
+
+Use `CREATE TABLE ... LIKE` and `INSERT ... SELECT`.
+```sql
+-- create an EMPTY table BASED on the DEFINITION of another table, including any column ATTRIBUTES and INDEXES defined
+CREATE TABLE new_tbl LIKE orig_tbl
+
+INSERT INTO new_tbl SELECT * FROM orig_tbl
+```
+
+There is a one liner `CREATE TABLE ... SELECT` statement. Unlike above, this "create table select" statement doesn't preserve/create attributes and indexes.
+
+[CREATE TABLE ... LIKE](https://dev.mysql.com/doc/refman/8.0/en/create-table-like.html) and [CREATE TABLE ... SELECT](https://dev.mysql.com/doc/refman/8.0/en/create-table-select.html)
