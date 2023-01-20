@@ -67,3 +67,13 @@ INSERT INTO new_tbl SELECT * FROM orig_tbl
 There is a one liner `CREATE TABLE ... SELECT` statement. Unlike above, this "create table select" statement doesn't preserve/create attributes and indexes.
 
 [CREATE TABLE ... LIKE](https://dev.mysql.com/doc/refman/8.0/en/create-table-like.html) and [CREATE TABLE ... SELECT](https://dev.mysql.com/doc/refman/8.0/en/create-table-select.html)
+
+**Check NULL and empty string**
+
+```sql
+SELECT * FROM customers WHERE (phone IS NULL OR phone = '');
+```
+
+> The meaning of the `NULL` can be regarded as “phone number is not known” and the meaning of the `empty string` can be regarded as “the person is known to have no phone, and thus no phone number.”
+
+[Problems with NULL Values](https://dev.mysql.com/doc/refman/8.0/en/problems-with-null.html)
