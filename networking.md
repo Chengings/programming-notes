@@ -20,7 +20,7 @@
  * [Diagnosing Network Issues with MTR](https://www.linode.com/docs/networking/diagnostics/diagnosing-network-issues-with-mtr/)
  * https://en.wikipedia.org/wiki/IEEE_802
  * [The pfSense Documentation](https://docs.netgate.com/pfsense/en/latest/preface/index.html)
-
+ * [Cloudflare: Measuring network quality to better understand the end-user experience](https://blog.cloudflare.com/aim-database-for-internet-quality/)
 ---
 
 ## Domain Name System (https://en.wikipedia.org/wiki/Domain_Name_System)
