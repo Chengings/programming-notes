@@ -14,6 +14,9 @@
 
 ## Browser devtools
 
+📚
+- https://devtoolstips.org
+
 ### Local Overrides
 Local overrides allow *permanent change* in local development. It will be remained on page reload and affected in every tab.
 
