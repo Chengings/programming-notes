@@ -139,3 +139,9 @@ Node.js has a built-in debug log method [stefanjudis](https://www.stefanjudis.co
 ## React
 
 [Life cycle](https://busypeoples.github.io/post/react-component-lifecycle/)
+
+## Asynchronous
+
+Script loading
+- https://stackoverflow.com/a/52177827
+- [Patterns for a Promises based initialization](https://jeremenichelli.io/2016/04/patterns-for-a-promise-based-initialization/) https://ghostarchive.org/archive/ZvdZS https://archive.today/2Al6g
