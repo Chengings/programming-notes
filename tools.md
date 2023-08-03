@@ -15,6 +15,9 @@
 ## Browser devtools
 
 📚
+- Firefox: https://firefox-source-docs.mozilla.org/devtools-user/
+- Chrome: https://developer.chrome.com/docs/devtools/
+	- https://developer.chrome.com/tags/devtools-tips/
 - https://devtoolstips.org
 
 ### Local Overrides
