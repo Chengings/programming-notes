@@ -29,6 +29,10 @@
 
 [Addressing the challenges of modern DNS a comprehensive tutorial](https://www.sciencedirect.com/science/article/pii/S1574013722000132)
 
+### Secure DNS
+
+[curl: DNS over HTTPS servers list](https://github.com/curl/curl/wiki/DNS-over-HTTPS#publicly-available-servers)
+
 ## NTP and About Time
 
 > NTP  uses  __UTC__,  as  distinct  from  the  Greenwich  Mean  Time  (GMT),  as  the  reference  clock  standard.  UTC  uses  the  TAI  time  standard.
