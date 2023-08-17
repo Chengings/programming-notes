@@ -8,11 +8,14 @@
 
 [Sample Regular Expressions](https://www.phpliveregex.com/learn/)
 
-### Remove time-interval in .vtt file
+## How to match
+
+**Match timestamp in .vtt file**
 ```regex
-^0.+
+(?:\d{2})?:?\d{2}:\d{2}\.\d{3}.+
 ```
 ```vtt
 00:00:33.633 --> 00:00:35.200
 ♪ Let me up first ♪
 ```
+https://www.w3.org/TR/webvtt1/#webvtt-timestamp
