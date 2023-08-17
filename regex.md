@@ -19,3 +19,10 @@
 ♪ Let me up first ♪
 ```
 https://www.w3.org/TR/webvtt1/#webvtt-timestamp
+
+**Filter only href and use capture group to grab the URL using PCRE**
+```regex
+href="([^"]*)"
+```
+`[^"]*` matches any character except `"`.
+
