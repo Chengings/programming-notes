@@ -32,7 +32,7 @@
 ### Secure DNS
 
 [curl: DNS over HTTPS servers list](https://github.com/curl/curl/wiki/DNS-over-HTTPS#publicly-available-servers)
-
+[Mozilla's DNS over HTTPs Partners](https://wiki.mozilla.org/Security/DOH-resolver-policy#Conforming_Resolvers)
 ## NTP and About Time
 
 > NTP  uses  __UTC__,  as  distinct  from  the  Greenwich  Mean  Time  (GMT),  as  the  reference  clock  standard.  UTC  uses  the  TAI  time  standard.
