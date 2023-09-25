@@ -18,7 +18,81 @@
 - Firefox: https://firefox-source-docs.mozilla.org/devtools-user/
 - Chrome: https://developer.chrome.com/docs/devtools/
 	- https://developer.chrome.com/tags/devtools-tips/
+	- https://developer.chrome.com/docs/devtools/console/utilities/
 - https://devtoolstips.org
+
+### Console helpers
+
+Check [Console API](https://developer.mozilla.org/en-US/docs/Web/API/Console_API) for spec and browser implementations.
+- [Firebug command line source](https://github.com/firebug/firebug/blob/master/extension/content/firebug/console/commandLineAPI.js)
+- [Chromium console source](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/inspector/v8-console.cc)
+
+`$_`
+returns the value of the most recently evaluated expression. For example, if you type “2+2 <enter>”, then “$_ <enter>”, the console will print 4.
+
+`$0`
+returns the most recently selected element or JavaScript object.
+
+`$1..$4`
+(chrome only) same as `$0` but last four DOM.
+
+`$(selector(, element))`
+shortcut for the `document.querySelector()`.]
+`element` is optional, default element is `document`.
+```js
+$('a', document.querySelector('body'))
+```
+
+`$$(selector(, element))`
+shortcut for the `document.querySelectorAll()`. It returns an array of elements.
+```js
+console.table(
+ $$('a', '.main-content'),
+ ['href', 'text']
+)
+```
+This code is looking for all `<a>` inside elements with the class `.main-content`.  The table will display the `href` (the URL the link points to) and `text` (the visible text within the link) properties of each selected link element.
+Check [console.table](https://developer.mozilla.org/en-US/docs/Web/API/Console/table).
+
+`$x(XPath (, element))`
+Same as `$$` but use XPath expression.
+
+`clear()`
+
+`copy(arg)`
+Copies argument to the clipboard.
+```js
+copy($0);
+```
+
+`inspect(obj/func)`
+```js
+// open in Elements
+inspect(document.body);
+// open in Source/Debugger
+inspect(itIsFunction());
+```
+
+`keys()` and `values()`
+
+`monitorEvents(object (, events))`
+(chrome only)
+```js
+monitorEvents(window, "resize");
+```
+
+**Firefox only**
+`:help`
+Go to https://firefox-source-docs.mozilla.org/devtools-user/web_console/helpers/index.html
+
+`:screenshot <filename>`
+"filename" is optional, it is not provided output format will be "Screen Shot yyy-mm-dd at hh.mm.ss.png".
+Optional parameters:
+```
+--clipboard
+--fullpage
+--selector
+```
 
 ### Local Overrides
 Local overrides allow *permanent change* in local development. It will be remained on page reload and affected in every tab.
