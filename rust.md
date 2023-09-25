@@ -14,7 +14,7 @@
 * [The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
 
 📦
-* [Tristan’s Top 100 Rust Crates](http://thume.ca/crates/)
+* [Tristan’s Top 100 Rust Crates](https://thume.ca/crates/)
 * [Rayon: A data parallelism library for Rust](https://github.com/rayon-rs/rayon)
 
 ---

@@ -534,7 +534,7 @@ Executing a command remotely with ssh (e.g. `ssh remote_machine 'date'`) or run 
 
 macOS and Linux have different meaning between graphical mode [^shell-modes], that means __`.zprofile`__ is a candidate place to put custom setting that required in any mode.
 
-__Note from Zshdoc (http://zsh.sourceforge.net/Intro/intro_3.html)__
+__Note from Zshdoc (https://zsh.sourceforge.net/Intro/intro_3.html)__
 > `.zprofile` is similar to `.zlogin`, except that it is sourced before `.zshrc`.
 
 > `.zlogin` is not the place for alias definitions, options, environment variable settings, etc.

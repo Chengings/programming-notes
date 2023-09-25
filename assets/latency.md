@@ -16,10 +16,10 @@
 
 Assuming ~1GB/sec SSD
 
-![Visual representation of latencies](http://i.imgur.com/k0t1e.png)
+![Visual representation of latencies](https://i.imgur.com/k0t1e.png)
 
 Visual chart provided by [ayshen](https://gist.github.com/ayshen)
 
-Data by [Jeff Dean](http://research.google.com/people/jeff/)
+Data by [Jeff Dean](https://research.google.com/people/jeff/)
 
-Originally by [Peter Norvig](http://norvig.com/21-days.html#answers)
+Originally by [Peter Norvig](https://norvig.com/21-days.html#answers)
