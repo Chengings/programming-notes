@@ -63,6 +63,8 @@ Same as `$$` but use XPath expression.
 Copies argument to the clipboard.
 ```js
 copy($0);
+
+copy($$('a').map(a => a.href).join('\n'))
 ```
 
 `inspect(obj/func)`
