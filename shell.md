@@ -85,7 +85,7 @@ echo "${ME:?Please define ME}"                # Set standard error message if ME
 #### Substring removal
 
 https://wiki.bash-hackers.org/syntax/pe#substring_removal
- 
+
 **From the beginning (Prefix)**
 `${parameter#[word]}` Remove smallest pattern
 `${parameter##[word]}` Remove largest pattern
@@ -106,10 +106,10 @@ echo ${MYSTRING##*in}
 ```sh
 MYSTRING='Be liberal in what you accept, and conservative in what you send'
 echo ${MYSTRING%in*}
-Be liberal in what you accept, and conservative 
+Be liberal in what you accept, and conservative
 
 echo ${MYSTRING%%in*}
-Be liberal 
+Be liberal
 ```
 
 **Common use**
@@ -129,7 +129,7 @@ gz
 
 echo "${FILE%%.*}"
 /home/user/example
-  
+
 echo "${FILE%.*}"
 /home/user/example.tar
 
