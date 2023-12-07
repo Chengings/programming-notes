@@ -145,3 +145,16 @@ Node.js has a built-in debug log method [stefanjudis](https://www.stefanjudis.co
 Script loading
 - https://stackoverflow.com/a/52177827
 - [Patterns for a Promises based initialization](https://jeremenichelli.io/2016/04/patterns-for-a-promise-based-initialization/) https://ghostarchive.org/archive/ZvdZS https://archive.today/2Al6g
+
+## Web APIs
+
+### Events
+
+Pointer events are the modern method to handle input from a range of pointing devices, such as touchscreen, mouse, stylus etc.
+- https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events
+- https://javascript.info/pointer-events
+- [Touch/pointer tests and demos](https://patrickhlauke.github.io/touch/)
+
+Bubbling
+- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling
+- https://javascript.info/bubbling-and-capturing#summary
