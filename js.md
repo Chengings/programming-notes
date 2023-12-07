@@ -74,12 +74,12 @@ class Thing {
       })
     }
   }
-  
+
   display_thing() {
     const canvas = document.querySelector('#output_canvas')
     // ...
   }
-  
+
   get data() {
     return this.data_
   }
@@ -112,7 +112,7 @@ const arrayUniq = arrayNotUniq.filter((value, index, self) => {
     })
 // es6
 const arrayUniq = [...new Set(arrayNotUniq)]
-``` 
+```
 
 [Use `Object.entries()` to loop object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
 ```javascript
