@@ -50,6 +50,8 @@ console.table(
  $$('a', '.main-content'),
  ['href', 'text']
 )
+
+$$('a', $0).map(a => a.href).join('\n')
 ```
 This code is looking for all `<a>` inside elements with the class `.main-content`.  The table will display the `href` (the URL the link points to) and `text` (the visible text within the link) properties of each selected link element.
 Check [console.table](https://developer.mozilla.org/en-US/docs/Web/API/Console/table).
@@ -65,6 +67,8 @@ Copies argument to the clipboard.
 copy($0);
 
 copy($$('a').map(a => a.href).join('\n'))
+
+copy($$('a', $0).map(a => a.href).join('\n'))
 ```
 
 `inspect(obj/func)`
