@@ -43,3 +43,9 @@
 [Template](./_template.md)
 
 https://readme.so/
+
+# Archive
+
+🗄️ with tag means the link has already been archived. Online archive sites that I use are
+- https://archive.today/
+- https://ghostarchive.org/
