@@ -35,6 +35,29 @@
 [curl: DNS over HTTPS servers list](https://github.com/curl/curl/wiki/DNS-over-HTTPS#publicly-available-servers)
 [Mozilla's DNS over HTTPs Partners](https://wiki.mozilla.org/Security/DOH-resolver-policy#Conforming_Resolvers)
 [DNS over HTTPS vs. TLS—Key Concepts, Implementation Guidelines, and Recommendations](https://www.catchpoint.com/http2-vs-http3/dns-over-https-vs-tls)
+
+## DNS Lookup Utilities
+
+| Tool                              | Description                                                                                                                                                                                                                               | Platform  |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| `dscacheutil -q host -a name`     | Queries the directory service cache, which may include information from various sources (e.g., DNS, LDAP, local hosts file).                                                                                                              | macOS     |
+| `getent hosts` or `getent ahosts` | Retrieves host entries from the Name Service Switch (NSS) configuration, which can include local files (e.g., `/etc/hosts`) and external sources (e.g., DNS).<br>- `hosts` return IPv6, and if none exists, IPv4<br>- `ahots` return both | Linux     |
+| `dig`                             | Provides detailed information about DNS records, while `dscacheutil` and `getent hosts` primarily focus on local host resolution.                                                                                                         | Universal |
+
+Get the IP address of the DNS resolver that sent the query to Akamai.
+```shell
+dig +short TXT whoami.ds.akahelp.net # whoami.ipv6.akahelp.net or whoami.ipv4.akahelp.net
+
+# Example response
+# The "ns" is the unicast IP address of the requesting recursive resolver
+"ns" "2620:171:d4::113"
+
+# The "ecs" record is the ECS client subnet included in the query.
+"ip" "2620:171:d4::113"
+# The "ip" record is a representative ip address selected at random by Akamai’s authoritative nameserver
+"ecs" "49.228.100.0/24/24"
+```
+
 ## NTP and About Time
 
 > NTP  uses  __UTC__,  as  distinct  from  the  Greenwich  Mean  Time  (GMT),  as  the  reference  clock  standard.  UTC  uses  the  TAI  time  standard.
