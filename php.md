@@ -51,6 +51,39 @@ if (null === $user) {
 }
 ```
 
+[Shorthand comparisons](https://stitcher.io/blog/shorthand-comparisons-in-php)
+```php
+$result = $initial ?: 'default'; // normal ternary is "$initial ? $initial : 'default';"
+
+// NULL coalescing operator
+$undefined ?? 'fallback'; // 'fallback'
+$unassigned;
+$unassigned ?? 'fallback'; // 'fallback'
+// 🚧 falsy is not NULL
+'' ?? 'fallback'; // ''
+'0' ?? 'fallback'; // '0'
+0 ?? 'fallback'; // 0
+false ?? 'fallback'; // false
+
+// Spaceship operator
+/*
+1 => left operand is larger
+0 => both operands are equals
+-1 => right operand is larger
+*/
+1 <=> 2 // -1
+
+$dateA = DateTime::createFromFormat('Y-m-d', '2000-02-01');
+$dateB = DateTime::createFromFormat('Y-m-d', '2000-01-01');
+$dateA <=> $dateB; // 1
+
+$array = [5, 1, 6, 3];
+usort($array, function ($a, $b) {
+    return $a <=> $b;
+});
+// [1, 3, 5, 6];
+```
+
 ## PHP 8
 
 __Constructor Property Promotion__ https://wiki.php.net/rfc/constructor_promotion
