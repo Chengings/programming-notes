@@ -2,6 +2,8 @@
 
 📚
  * Request for Comments (RFC) https://wiki.php.net/rfc
+ * Comparison Operators https://www.php.net/manual/en/language.operators.comparison.php
+ * PHP type comparison tables https://www.php.net/manual/en/types.comparisons.php
 
 ---
 
