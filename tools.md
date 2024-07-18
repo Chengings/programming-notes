@@ -19,6 +19,8 @@
 - Chrome: https://developer.chrome.com/docs/devtools/
 	- https://developer.chrome.com/tags/devtools-tips/
 	- https://developer.chrome.com/docs/devtools/console/utilities/
+- Edge: https://learn.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/landing/
+- Safari: https://webkit.org/web-inspector/
 - https://devtoolstips.org
 
 ### Console helpers
