@@ -11,7 +11,10 @@
 * [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)
 * [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)
 * [Keywords](https://doc.rust-lang.org/book/appendix-01-keywords.html) & [Operators and Symbols](https://doc.rust-lang.org/book/appendix-02-operators.html)
+
+Cargo
 * [The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
+* [GitHub - rust-lang/cargo: The Rust package manager](https://github.com/rust-lang/cargo)
 
 📦
 * [Tristan’s Top 100 Rust Crates](https://thume.ca/crates/)
