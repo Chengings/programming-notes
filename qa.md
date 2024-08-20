@@ -6,8 +6,7 @@ A: `pkill loginwindow`
 
 __Q: When to use parallel (`fd -x` or `GNU Parallel`)?__
 
-A: Expecting outputs as a new format such as convert png to jpg.
-Dealing with same format such as rename file name, use `for input in <pattern>; do <cmd> "$input";done` will be safer. __Create backup will be safest choice__
+A: When expecting outputs in a new format, such as convert PNG to JPG. However, when dealing with same format, such as renaming files, it is safer to use `for input in <pattern>; do <cmd> "$input"; done` . __Creating a backup will be the safest choice__
 
 __Q: Zsh's autocomplete doesn't work?__
 
