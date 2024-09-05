@@ -88,6 +88,8 @@ Backup or copy mysql databases via `mysqldump`.
 mysqldump database_name > db.sql
 mysqldump database_name table_name > db_table.sql
 mysqldump --all-databases > all_dbs.sql
+# with routines, triggers and events
+mysqldump -u username --password --all-databases --routines --triggers --events > all_dbs.sql
 mysqldump --compress database_name > db.sql.gz
 
 # copy data to remote host
