@@ -6,6 +6,21 @@
  * [SQL Language Expressions](https://sqlite.org/lang_expr.html)
  * https://antonz.org/sql-cheatsheet/ #🗄️
 
+### Data Types
+
+Numeric types
+- Approximate: `FLOAT`, `REAL`, `DOUBLE`
+	- Exact position is in critical
+	- Rounding is acceptable
+	- For sensor readings, statistical  calculations, graphics
+- Exact: `NUMERIC`, `DECIMAL`, `INTEGER`
+	- Financial calculations requiring exact precision
+	- Any  calculations where rounding errors are unacceptable
+
+ References:
+ - https://en.wikipedia.org/wiki/SQL#SQL_data_types
+ - [MySQL Reference Manual - Precision Math](https://dev.mysql.com/doc/refman/en/precision-math.html)
+
 ### Views
 
 ```sql
