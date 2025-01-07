@@ -23,3 +23,12 @@ A: In Debian, check `/var/log/syslog`. None for Darwin.
 **Q: HDMI doesn't work on macOS**
 
 A: [Reset NVRAM](https://support.apple.com/HT204063) via this command `Option + Command + P + R`. https://forums.macrumors.com/threads/hdmi-port-no-longer-working-after-update-to-macos-11-big-sur.2268966/page-5?post=30857888#post-30857888
+
+**Q: rsync - protocol version mismatch -- is your shell clean**
+
+A: https://www.suse.com/support/kb/doc/?id=000021212
+```shell
+ssh user@remoteip /true > debug.txt
+cat debug.txt
+grep -Ril "<debug_output>" .
+```
