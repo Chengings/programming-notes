@@ -1,16 +1,11 @@
 # Tools
 
-[Compiler Explorer: An Interactive Online Tool That Shows The Assembly Output Of Compiled Code In Languages Like C++, Rust, And Go](https://compiler-explorer.com/)
-
-[free-for.dev: a list of software (SaaS, PaaS, IaaS, etc.) and other offerings that have free tiers for developers](https://free-for.dev/)
-
-[duckduckgo: JSON Beautifier & Validator](https://duckduckgo.com/?q=json+formatter)
-
-[squoosh: an image compression web app](https://squoosh.app/)
-
-[badssl.com: testing clients against bad SSL configs](https://badssl.com)
-
-[Modern unix tools](https://github.com/ibraheemdev/modern-unix)
+- [badssl.com: testing clients against bad SSL configs](https://badssl.com)
+- [Compiler Explorer: An Interactive Online Tool That Shows The Assembly Output Of Compiled Code In Languages Like C++, Rust, And Go](https://compiler-explorer.com/)
+- [duckduckgo: JSON Beautifier & Validator](https://duckduckgo.com/?q=json+formatter)
+- [free-for.dev: a list of software (SaaS, PaaS, IaaS, etc.) and other offerings that have free tiers for developers](https://free-for.dev/)
+- [Modern unix tools](https://github.com/ibraheemdev/modern-unix)
+- [squoosh: an image compression web app](https://squoosh.app/)
 
 ## Browser devtools
 
