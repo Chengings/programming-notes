@@ -1,5 +1,7 @@
 # Tools
 
+[Compiler Explorer: An Interactive Online Tool That Shows The Assembly Output Of Compiled Code In Languages Like C++, Rust, And Go](https://compiler-explorer.com/)
+
 [free-for.dev: a list of software (SaaS, PaaS, IaaS, etc.) and other offerings that have free tiers for developers](https://free-for.dev/)
 
 [duckduckgo: JSON Beautifier & Validator](https://duckduckgo.com/?q=json+formatter)
