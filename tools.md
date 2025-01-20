@@ -1,7 +1,5 @@
 # Tools
 
-[curl.trillworks.com: convert curl syntax to Python, Ansible URI, Node.js, R, PHP, Strest, Go, Dart, JSON, Rust](https://curl.trillworks.com/)
-
 [free-for.dev: a list of software (SaaS, PaaS, IaaS, etc.) and other offerings that have free tiers for developers](https://free-for.dev/)
 
 [duckduckgo: JSON Beautifier & Validator](https://duckduckgo.com/?q=json+formatter)
