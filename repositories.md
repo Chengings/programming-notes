@@ -1,3 +1,5 @@
+⭐ [searchcode  source code search engine](https://searchcode.com/)
+
 [Apple OSS Distributions: OSS Code distributed by Apple, Inc](https://github.com/apple-oss-distributions) and https://opensource.apple.com/releases/
 
 [Debian Projects](https://salsa.debian.org/explore)
