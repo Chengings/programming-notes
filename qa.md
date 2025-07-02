@@ -26,7 +26,7 @@ A: [Reset NVRAM](https://support.apple.com/HT204063) via this command `Option + 
 
 **Q: rsync - protocol version mismatch -- is your shell clean**
 
-A: This issue arises from startup scripts executed on remote shell facilities that generate unwanted output, which confuses the rsync command. 
+A: This issue arises from startup scripts executed on remote shell facilities that generate unwanted output, which confuses the rsync command.
 https://www.suse.com/support/kb/doc/?id=000021212
 ```shell
 ssh user@remoteip true > debug.txt
