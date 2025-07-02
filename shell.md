@@ -28,6 +28,29 @@ To disable shell history temporarily, open new terminal session and enter `unset
 * [The Linux man-pages project](https://www.kernel.org/doc/man-pages/) [Online man pages: man7.org](https://man7.org/linux/man-pages/index.html)[Debian Manpages](https://manpages.debian.org)
 * [Command Line Interface Guidelines](https://clig.dev/#guidelines)
 
+## Secure Shell
+
+### SSH Escape Characters
+
+SSH escape characters are sequences to control the SSH session rather than interact with the remote shell.
+
+The default escape character is tilde **~** and to trigger the character it **must** follow a newline. The combination is `Enter~`.
+
+The supported escapes are:
+
+| Sequence | Action                     |
+| -------- | -------------------------- |
+| `~.`     | Terminate the session      |
+| `~?`     | Help                       |
+| `~^Z`    | Background the session     |
+| `~#`     | List forwarded connections |
+
+For example, to kill the current session hit `Enter~.` subsequently.
+
+https://www.man7.org/linux/man-pages/man1/ssh.1.html#ESCAPE_CHARACTERS
+
+https://askubuntu.com/questions/29942/how-can-i-break-out-of-ssh-when-it-locks/29952#29952
+
 ## POSIX
 
 ### Quoting
