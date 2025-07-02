@@ -33,3 +33,8 @@ ssh user@remoteip true > debug.txt
 cat debug.txt
 grep -Ril "<debug_output>" .
 ```
+
+**Q: How to get the tilde (~) to work correctly in macOS**
+
+A: Remove `/Library/Preferences/com.apple.keyboardtype.plist`. https://gist.github.com/nezticle/871091a41ce322e81be947d83a5e4a86
+
