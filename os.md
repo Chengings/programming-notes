@@ -184,6 +184,11 @@ Stop and unload the service
 launchctl bootout gui/$(id -u) /Library/LaunchAgents/service.plist
 ```
 
+Force restart a hanging service
+```shell
+launchctl kickstart -k gui/$(id -u)/my.name.gitpull
+```
+
 ##### Legacy
 
 ```shell
