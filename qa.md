@@ -38,3 +38,12 @@ grep -Ril "<debug_output>" .
 
 A: Remove `/Library/Preferences/com.apple.keyboardtype.plist`. https://gist.github.com/nezticle/871091a41ce322e81be947d83a5e4a86
 
+**Q: `lf` hangs (blank `0/0`) and `ssh` to a Pi can't resolve `<host>.local`**
+
+A: The Pi's Avahi falsely renamed itself `<host>-2.local` (https://github.com/avahi/avahi/issues/117), so a WebDAV mount under `/Volumes` died; lf's `watch` stats `/Volumes` and blocks on it (so do `ls` and `lsof`).
+```shell
+umount -f /Volumes/<mount>
+ssh <user>@<pi-ip> 'sudo systemctl restart avahi-daemon'
+```
+Prevent with `use-ipv6=no` + `publish-aaaa-on-ipv4=no` in `avahi-daemon.conf`, plus a watchdog timer that restarts Avahi if the name drifts.
+
